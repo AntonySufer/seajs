@@ -1,0 +1,243 @@
+<div class="page" id="simulatedStocks_myMatch" data-pageTitle="我的大赛列表"  data-refresh="true">
+	<section class="main fixed" data-page="home">
+			<header class="header">
+				<div class="header_inner header_inner_02">
+					<h1>我的比赛</h1>
+					<a href="javascript:void(0);" class="back_btn"></a>
+						<a href="javascript:void(0)" class="menu_iocn" style="display: none"></a>
+			<a href="javascript:void(0)" class="menu_iocn close_iocn" style="display: none" id="close" ></a>
+			<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">我的</a>
+					</li>
+				</ul>
+			</div>
+				</div>
+			</header>
+			
+				<article>
+				<div class="positions_det">
+					<div class="income_top_box">
+						<span class="going" >正在参赛: <em class="expect" id="join_nowName"></em></span>
+						<div class="income_up noneline">
+							<h4>总收益率</h4>
+							<strong id="all_yeled">--<span>%</span></strong>
+						</div>
+						<div class="income_lower">
+							<div class="ui layout">
+								<div class="row-1 none-after">
+									<p>本周收益</p>
+									<span id="week_yeled">--</span>
+								</div>
+								<div class="row-1">
+									<p>本周排名</p>
+									<span id="this_weekRanking">--</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pos_assets_box">
+						<div class="ui layout">
+							<div class="row-1">
+								<p>总资产（元）</p>
+								<span id="all_money">--</span>
+							</div>
+							<div class="row-1">
+								<p>总市值（元）</p>
+								<span id="guzhi_money">--</span>
+							</div>
+							<div class="row-1">
+								<p>可用资金</p>
+								<span id="user_money">--</span>
+							</div>
+						</div>
+					</div>
+					<div class="pos_assets_box mt10">
+						<div class="ui layout" id="stock_type">
+							<div class="row-1 tran" name="1">
+								<img src="images/wo_buy.png" />
+								<span>买入</span>
+							</div>
+							<div class="row-1 tran" name="2">
+								<img src="images/wo_sell.png" />
+								<span>卖出</span>
+							</div>
+							<div class="row-1 tran" name="3">
+								<img src="images/wo_del.png" />
+								<span>撤单</span>
+							</div>
+							<div class="row-1 tran" name="4">
+								<img src="images/wo_que.png" />
+								<span>查询</span>
+							</div>
+						</div>
+					</div>
+					<div  class="dynamic_trading_list mt10">
+						<div class="tab">
+							<div class="ui layout">
+								<div class="row-1" id="row1">
+									<a href="javascript:;" class="act" >持仓</a>
+								</div>
+								<div class="row-1" id="row2">
+									<a href="javascript:;" >交易动态</a>
+								</div>
+								<div class="row-1" id="row3">
+									<a href="javascript:;" >收益走势</a>
+								</div>
+							</div>
+						</div>
+						<!-- 持仓 -->
+						<div class="tab_con" id="postion" >
+							<div class="pos_table">
+								<table class="ui table">
+									<tr id="HoldStockList">
+										<th>名称</th>
+										<th>盈亏</th>
+										<th>持仓/仓位</th>
+										<th>成本/现价</th>
+									</tr>
+								<!-- 	<tr>
+										<td>
+											<h4>同济科技</h4>
+											<p>600030.SH</p>
+										</td>
+										<td>
+											<p class="agreen">-25%</p>
+											<p class="agreen">-2180.00</p>
+										</td>
+										<td>
+											<p>4000</p>
+											<p>0</p>
+										</td>
+										<td>
+											<p class="ared">13.54</p>
+											<p class="ared">18.00</p>
+										</td>
+									</tr>
+								 -->
+								
+								</table>
+							</div>
+						</div>
+					
+					<!-- 比赛动态 -->
+							<!-- 动态 -->
+							<div class="tab_con"  id="dymanic"  style="display:none;">
+							<div class="tab_con_det2"   >
+								<div class="det2_con">
+									<div class="list_detail" id="TradeList">
+										<!-- <div class="list_item">
+											<h3>2015-4-24 交易记录</h3>
+											<table class="ui table" >
+												<tr id="dongtai">
+													<th>股票名称</th>
+												  	<th>成交价</th>
+												  	<th>操作</th>
+												  	<th>仓位变动</th>
+												</tr  >
+											</table>
+										</div> -->
+									</div>
+								</div>
+							   </div>
+							</div>   
+							<!--收益图-->   
+							<div class="tab_con" id="chartsRaking" style=" display:none;">
+							<div class="earnings_trend_tit">
+								<h3>收益率走势<span id="create_drowChart"></span></h3>
+							</div>
+							<div class="earnings_trend_con">
+								<div class="chart_box" id="drows">
+									<!-- <img src="images/trend_chart.jpg" width="100%" /> -->
+								</div>
+								<div class="chart_annotations" style="display:none ;">
+									<span class="bs_01"><i></i>总资产走势</span>
+									<span class="bs_02"><i></i>同期上证涨跌幅走势</span>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					
+					<div class="composite_profile composite_profile1 mt10">
+						<div class="li_tit">
+							<h3>我的战绩
+								<span id="myMatchList" name="1" ></span>
+							</h3>
+						</div>
+						<!--尚未参赛-->
+						<div style="display: none;" id="matchnone" class="none-join">
+							尚未参赛
+						</div>
+						<div class="my-zj" id="insertRanking" style=" display: none;" >
+							<table class="ui table slideup in">
+								<tr id="match_ranklist">
+									<th>比赛名称</th>
+									<th>收益率</th>
+									<th>排名</th>
+								</tr>
+							<!-- 	<tr>
+									<td>
+										<p>微博华林证券炒股大赛第一期</p>
+									</td>
+									<td>
+										<p>29.06%</p>
+									</td>
+									<td>
+										<p>2</p>
+									</td>
+								</tr> -->
+								
+							</table>
+						</div>
+					</div>
+					<div class="composite_profile composite_profile1 mt10">
+						<div class="li_tit">
+							<h3>我的奖励
+								<span id="myAward" name="1"></span>
+							</h3>
+						</div>
+						<!--尚未参赛-->
+						<div style="display: none;" id="award_none" class="none-join">
+							尚未奖励
+						</div>
+						<div class="my-zj" id="insertAward" style=" display: none;">
+							<table class="ui table slideup in">
+								<tr id="awardList">
+									<th>比赛名称</th>
+									<th>奖励</th>
+								</tr>
+								<!-- <tr>
+									<td>
+										<p>微博华林证券炒股大赛第一期</p>
+									</td>
+									<td>
+										<p>现金2000元</p>
+									</td>
+								</tr> -->
+								
+							</table>
+						</div>
+						 <div style="height: 0.4rem;">
+							
+						</div>
+					</div>
+				</div>
+			</article>
+		
+		</section>
+
+</div>

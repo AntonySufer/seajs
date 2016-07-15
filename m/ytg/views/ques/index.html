@@ -1,0 +1,94 @@
+<div class="page" id="ques_index" data-pageTitle="问答最新提问"
+	data-refresh=yes>
+	<section class="main" data-page="home">
+		<header class="header">
+			<div class="header_inner tiao">
+				<a href="javascript:void(0)" class="icon_back"></a>
+				<h1 class="title text-center tiao">问答</h1>
+				<a href="javascript:void(0)" class="menu_iocn"></a> 
+				<a href="javascript:void(0)" class="menu_iocn close_iocn" style="display: none" id="close"></a>
+				<div class="xl_menu" style="display: none">
+					<ul>
+						<li><a href="javascript:void(0)">首页</a></li>
+						<li><a href="javascript:void(0)">组合</a></li>
+						<li><a href="javascript:void(0)">理财师</a></li>
+						<li><a href="javascript:void(0)">问答</a></li>
+						<li><a href="javascript:void(0)">我的</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top_nav" id="top_nav" >
+					<div class="ui layout">
+						<div class="row-1" id="newTiwen">
+							<a href="javascript:void(0)" class="act">最新提问</a>
+						</div>
+						<div class="row-1" id="newHuida">
+							<a href="javascript:void(0)">最新回答</a>
+						</div>
+					</div>
+				</div>
+		</header>
+		<article>
+			<div class="my_page">        
+				<div class="my_page_con" style="margin-top: 2px!important;">
+        
+				<div id="v_container_div">
+	        	<div class="visc_wrapper" id="v_wrapper_div" data-iscrollPageId="ques_index">
+	        		<div class="visc_scroller">
+	        			<div class="visc_pullDown" style="display:none;">
+	       					<span class="visc_pullDownIcon"></span>
+	       					<div class="visc_pullDownDiv">
+	       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+								时间更新于：<span class="visc_pullDownTime"></span>
+	       				   </div>
+	       			    </div>
+				
+				        <div class="advisory_list">
+						<ul id="advisory_list">
+						</ul>
+						</div>
+					
+					  <div class="visc_pullUp" style="display:none;">
+	       					<span class="visc_pullUpIcon"></span>
+	       					<div class="visc_pullUpDiv">
+								<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+								时间更新于：<span class="visc_pullUpTime"></span>
+							</div>
+	       			   </div>
+	        		</div>
+	        	</div>
+	            </div>
+	        
+				</div>
+				</div>
+				
+			<div class="foot_add_box foot_box_fixed" id="ques">
+				<div class="ui button-group">
+					<a href="javascript:void(0)" class="ui button block ques_btn" style="background: #303032; color:#fff !important;">提问</a>
+				</div>
+			</div>
+			
+		</article>
+		
+	<!--提问弹窗-->
+	<div class="window_dialog"  id="tiwen" style="display:none;">
+		<div class="dialog_cet" id="dialog">
+		 <a href="javascript:void(0)" class="close_btn"></a>
+			<div class="dialog_cet_det">
+				<div class="dialog_tit">
+					<h3 id="invest_name"></h3>
+				</div>
+				<div class="dialog_txt">
+				    <textarea id="comment"></textarea>		
+					<span class="tips_txt" id="word">还可以输入120字</span>
+				</div>
+				<div class="login_btn">
+					<a href="javascript:void(0)" class="ui button block rounded" id="commit">提交问题</a>
+				</div>
+			</div>
+		</div>
+	 </div>	
+	 <div class="window_gray" style="display: none" id="close"></div>
+				<!--遮罩层 -->
+	</section>
+</div>

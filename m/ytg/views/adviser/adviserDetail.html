@@ -1,0 +1,137 @@
+<div class="page" id="adviser_adviserDetail" data-pageTitle="投顾详情"  data-refresh=yes data-urlParam="true">
+	<section class="main fixed" data-page="home">
+	<header class="header">
+		<div class="header_inner tiao">
+			<a href="javascript:void(0)" class="icon_back"></a>
+			<h1 class="title text-center">投顾详情</h1>
+			
+			<a href="javascript:void(0)" class="menu_iocn"></a>
+			<a href="javascript:void(0)" class="menu_iocn close_iocn" style="display: none" id="close" ></a>
+			<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">我的</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="my_page2">
+			
+		<div class="grid_box adv_box1">
+		<div class="tg_info_box clearfix">
+				<div class="head_por">
+					<img src="images/my_tx2.png" width="68" class="circle" id="face_image_small">
+				</div>
+				<div class="info_det">
+					<div class="det_up clearfix">
+						<div class="fr_box">
+							<a href="javascript:void(0)" class="att_btn" id="subInvest"> +关注</a>
+							<span><i></i><b id="fans_num"></b></span>
+						</div>
+						<h4><font id="name"></font> | 投资顾问</h4>
+						<p id="company"></p>
+						<p id="address"></p>
+					</div>
+					<div class="det_lower clearfix">
+						<a href="javascript:void(0)" class="ask_btn">向TA提问</a>
+						<span ><em>观点</em><b id="view_read_num"></b></span>
+						<span><em>回答</em><b id="answer_num"></b></span>
+					</div>
+				</div>
+			</div>
+		
+		
+				<div class="top_nav">
+					<div class="ui layout">
+						<div class="row-1" >
+							<a href="javascript:void(0)" class="act" id="zhu">简介</a>
+						</div>
+						<div class="row-1">
+							<a href="javascript:void(0)" id="zuhe">组合</a>
+						</div>
+						<div class="row-1">
+							<a href="javascript:void(0)" id="guandian">观点</a>
+						</div><div class="row-1">
+							<a href="javascript:void(0)" id="wenda">问答</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="jianjie">
+				<div class="grid_box adv_box2">
+					<div class="box2_tit">
+						<h3 >证券职业资格号：<span id="card_id"></span></h3>
+					</div>
+					<div class="box2_txt">
+						<p id="introdution"></p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- 组合 -->
+				<div class="combination_list" id="portfolio" style="display:none;">
+				<div>
+					<div class="list_con" id="none">
+					
+						<ul id="portfolioList">
+						</ul>
+						</div>
+					</div>
+				</div>
+			
+			<!-- 观点-->
+			 	<div class="combination_list index_hot_box view_hot_box mt10" id="point" style="display:none;">
+                    	<div class="box_con">
+					<ul id="pointList">
+					</ul>
+				</div> 
+				</div> 
+				
+			
+			<!-- 问答 -->
+			<div class="answered_list adv_answered_list" id="ques" style="display:none;">
+					  <ul id="quesList">
+			            </ul>
+			</div>
+			</div> 
+	
+	</article>
+	 	<!--提问弹窗-->
+	<div class="window_dialog"  id="tiwen" style="display:none;">
+		<div class="dialog_cet" id="dialog">
+		 <a href="javascript:void(0)" class="close_btn"></a>
+			<div class="dialog_cet_det">
+				<div class="dialog_tit">
+					<h3 id="invest_name"></h3>
+				</div>
+				<div class="dialog_txt">
+				    <textarea id="comment"></textarea>		
+					<span class="tips_txt" id="word">还可以输入120字</span>
+				</div>
+				<div class="login_btn">
+					<a href="javascript:void(0)" class="ui button block rounded" id="commit">提交问题</a>
+				</div>
+			</div>
+		</div>
+	 </div>
+   	<div class="window_gray" style="display: none" id="close"></div>	<!--遮罩层 -->
+
+
+</section>
+
+</div>

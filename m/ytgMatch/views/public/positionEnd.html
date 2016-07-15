@@ -1,0 +1,172 @@
+<div class="page" id="public_positionEnd" data-pageTitle="组合详情比赛已结束"  data-refresh="yes">
+<section class="main fixed" data-page="home">
+	<header class="header">
+		<div class="header_inner header_inner_02">
+			<h1>历史战绩</h1>
+			<a href="javascript:void(0);" class="back_btn"></a>
+				<a href="javascript:void(0)" class="menu_iocn" style="display: none"></a>
+			<a href="javascript:void(0)" class="menu_iocn close_iocn" style="display: none" id="close" ></a>
+			<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">我的</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="positions_det">
+		 	<div class="income_top_box">
+		 		<div class="income_up">
+		 			<h4>赛期收益</h4>
+		 			<strong id="all_yeled"></strong>
+		 		</div>
+		 		<div class="income_lower">
+		 			<div class="ui layout">
+		 				<div class="row-1">
+		 					<p>比赛排名</p>
+		 					<span id="rankings"></span>
+		 				</div>
+		 				<div class="row-1">
+		 					<p>大赛名称</p>
+		 					<span  style="color:#fff;" id="dname"></span>
+		 				</div>
+		 				<div class="row-1" >
+		 					<a href="javascript:void(0);" style="display: none;" id="analysis">赛期分析</a>
+		 				</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<div class="user_box clearfix">
+		 		<div class="ui layout">
+		 			<div class="lt_pic">
+			 			<img id="small_img" src="images/my_tx.png" class="circle" />
+			 		</div>
+			 		<div class="row-1 rt_txt">
+			 			<p id="name"></p>
+			 		</div>
+		 		</div>
+		 	</div>
+		 	<div class="contest_info" style="border-bottom:0.01rem solid #dddddd; display: none;" id="matchNameDiv">
+		 		<h3 id="match_name"></h3>
+		 	</div>
+		 </div>
+		 
+	   <div class="analysis_page">
+					<div class="analysis_box">
+						<div class="an_box1">
+							<ul>
+								<li class="ui layout clearfix">
+									<div class="row_fl">
+										<span>操作风格</span>
+										<h3 class="ared" id="portfolio_style"></h3>
+									</div>
+									<div class="row_fc">
+										<em id="stock_holddays_avg"></em>
+										<p>平均持股天数（天）</p>
+									</div>
+									<div class="row_fr"></div>
+								</li>
+								<li class="ui layout clearfix">
+									<div class="row_fl">
+										<span>风险偏好</span>
+										<h3 class="abrown" id="stock_style"></h3>
+									</div>
+									<div class="row_fc">
+										<em id="stock_num_avg"></em>
+										<p>平均每天持股（支）</p>
+									</div>
+									<div class="row_fr">
+										<em id="retrace_rate_year"></em>
+										<p>近一年最大回撤（%）</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="an_box2">
+							<h5>选股胜率</h5>
+							<div class="an_box2_con clearfix">
+								<div class="row_fl">
+									<div class="ui layout">
+										<div class="ring_box" id="profitDiv">
+										<!-- 	<img src="images/ring_icon1.png"  width="46" />  -->
+										</div>
+										<div class="row-1">
+											<span id="trade_success_rate"></span>
+											<p><em id="trade_success_sum">0</em>笔盈利交易</p>
+										</div>
+									</div>
+								</div>
+								<div class="row_fl">
+									<div class="ui layout">
+										<div class="ring_box" id="lossDiv">
+										<!-- 	<img src="images/ring_icon2.png"  width="46" /> -->
+										</div>
+										<div class="row-1">
+											<span id="trade_loss_rate"></span>
+											<p><em id="trade_loss_sum">0</em>笔亏损交易</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="an_box3">
+							<div class="ui layout chart_tit">
+								<div class="row-2">
+									<p>历史交易盈/亏前五个股</p>
+								</div>
+								<div class="row-1">
+									<p><em></em>单位：万元</p>
+								</div>
+							</div>
+							<div class="chart_con" id="investStk">
+							<!-- 	<img src="images/chart_pic2.png" width="100%" /> -->
+							</div>
+						</div>
+					</div>
+					<div class="analysis_table mt10">
+						<div class="table_tit">
+							<h3>完整收益</h3>
+						</div>
+						<div class="table_con">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<!-- <tr>
+									<td>
+										<h4>利欧股份</h4>
+										<p>数量 5100</p>
+									</td>
+									<td>
+									
+										<h5 class="ared">61.41 买入</h5>
+										<p>2015.08.11</p>
+									</td>
+									<td>
+										<h5 class="agreen">62.53 卖出</h5>
+										<p>2015.08.19</p>
+									</td>
+									<td>
+										<h5 class="ared">1.82%</h5>
+										<p class="ared">盈利并跑赢大盘</p>
+									</td>
+								</tr> -->
+								
+							</table>
+						</div>
+					</div>
+				</div>
+	</article>
+</section>
+</div>

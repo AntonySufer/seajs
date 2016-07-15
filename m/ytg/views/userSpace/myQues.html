@@ -1,0 +1,92 @@
+<div class="page" id="userSpace_myQues" data-pageTitle="我的咨询"  data-refresh="yes" data-isCheckLogin="true">
+<section class="main tiao" data-page="home">
+	<header class="header" id="#header">
+		<div class="header_inner ">
+			<a href="javascript:void(0)" class="icon_back"></a>
+			<h1 class="title text-center">问答咨询</h1>
+			<!-- <a class="adv_nav_iocn"></a> -->
+		</div>
+	</header>
+	<article>
+		<div class="my_page">
+			<div class="top_nav" id="top_nav">
+				<div class="ui layout">
+					<div class="row-1">
+						<a href="javascript:void(0)" class="act" id="muQues">我的提问</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)" id="myAns">我的回答</a>
+					</div>
+				</div>
+			</div>
+			
+		<!-- 我的提问 -->
+		<div class="my_page_con" data-module="quesDiv" style = " padding: 0.00rem 0 0;">
+			
+			<div id="v_container_ques">
+	       	<div class="visc_wrapper" id="v_wrapper_ques" data-iscrollParentId="v_container_ques" data-iscrollPageId="userSpace_myQues"> 
+	       		<div class="visc_scroller">
+	       			<div class="visc_pullDown" style="display:none;">
+       					<span class="visc_pullDownIcon"></span>
+       					<div class="visc_pullDownDiv">
+       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+							时间更新于：<span class="visc_pullDownTime"></span>
+       					</div>
+       				</div>
+			
+				<div class="advisory_list">
+					<ul id="quesList">
+						
+					</ul>
+				</div>
+				
+					<div class="visc_pullUp" style="display:none;">
+       					<span class="visc_pullUpIcon"></span>
+       					<div class="visc_pullUpDiv">
+							<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+							时间更新于：<span class="visc_pullUpTime"></span>
+						</div>
+       				</div>
+	       		</div>
+	       	</div>
+    	</div>
+				
+		</div>
+		
+		
+		 <!-- 我的回答 -->
+		 <div style="margin-top:5px!important; padding: 0.00rem 0 0;">
+			<div id="v_container_ans">
+	       	<div class="visc_wrapper" id="v_wrapper_ans" data-iscrollParentId="v_container_ans" data-iscrollPageId="userSpace_myQues"> 
+	       		<div class="visc_scroller">
+	       			<div class="visc_pullDown" style="display：none;">
+       					<span class="visc_pullDownIcon"></span>
+       					<div class="visc_pullDownDiv">
+       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+							时间更新于：<span class="visc_pullDownTime"></span>
+       					</div>
+       				</div>
+			
+			    <div class="answered_list" data-module="ansDiv" style="display:none;">
+				<ul id="ansList">
+				</ul>
+				</div>
+				
+				   <div class="visc_pullUp" style="display:none;">
+       					<span class="visc_pullUpIcon"></span>
+       					<div class="visc_pullUpDiv">
+							<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+							时间更新于：<span class="visc_pullUpTime"></span>
+						</div>
+       				</div>
+	       		</div>
+	       	</div>
+    	    </div>
+    	    </div>
+	
+		</div>  
+		
+	</article>
+		<div class="window_gray" style="display: none" id="close"></div>	<!--遮罩层 -->
+</section>
+</div>

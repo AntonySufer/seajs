@@ -1,0 +1,2302 @@
+.mt10 { margin-top:0.1rem; }
+.mt20 { margin-top:0.2rem; }
+.mb15{margin-bottom: 0.15rem;}
+.ared { color:#FF5555 !important; }
+.agreen { color:#22AA22 !important; }
+.ablue{ color: #1199ee !important;}
+.aorange{ color: #f48c56 !important;}
+::-webkit-scrollbar{width:0px}
+::-webkit-input-placeholder {
+    color:#cccccc !important;
+    font-size: 0.14rem;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: #F4F4F2;
+	overflow: hidden;
+}
+html{
+	overflow: hidden;
+}
+.white_bg{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+.my_page,.login_page {
+	background: #f2f2f2;
+	height: 100%;
+}
+
+.header_inner {
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #2C4669;
+	/*position: relative;*/
+}
+
+.header_inner .logo {
+	width: 1rem;
+	height: 0.4rem;
+	display: block;
+	background: url(../images/matchImages/logo.png) center no-repeat;
+	background-size: 1rem 0.2rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0;
+}
+
+ .header_inner .login_btn {
+	min-width: 0.4rem;
+    height: 0.45rem;
+    display: block;
+    background: url(../images/matchImages/sy_login.png) center no-repeat;
+    background-size: 44px 44px;
+    position: absolute;
+    right: 0.45rem;
+    top: 0;
+}
+
+/* .header_inner .search_btn {
+    display: block;
+    width: 0.4rem;
+    height: 0.45rem;
+    background: url(../images/matchImages/sy_search.png) center no-repeat;
+    background-size: 44px 44px;
+    position: absolute;
+    right: 0.0em;
+    top: 0;
+} */
+
+.header_inner .icon_back {
+	display: block;
+    width: 0.4rem;
+    height: 0.45rem;
+    background: url(../images/matchImages/icon_back.png) center no-repeat;
+    background-size: 44px 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header_inner h1 {
+    font-size: 18px;
+    color: #F5F4F2;
+    line-height: 0.44rem;
+    font-family: "黑体";
+}
+
+.header_inner .iocn_right {
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.header_inner .xl_menu {
+	width: 1.4rem;
+	background: #FFFFFF;
+	position: absolute;
+	right: 0.1rem;
+	top: 0.4rem;
+	z-index: 999;
+	-webkit-border-radius:15px;
+}
+
+.header_inner .xl_menu li {
+	height: 0.42rem;
+	border-bottom: 0.01rem solid #E8E8E8;
+}
+
+.header_inner .xl_menu li:nth-child(5)  {
+	border-bottom:0rem;
+}
+
+.header_inner .xl_menu a {
+	display: block;
+	font-size: 0.16rem;
+	color: #333333;
+	padding-left: 0.54rem;
+}
+
+.header_inner .xl_menu li:nth-child(1) a {
+	background: url(../images/matchImages/icon_index.png) 0.18rem center no-repeat;
+	background-size: 0.17rem 0.16rem;
+}
+
+.header_inner .xl_menu li:nth-child(2) a {
+	background: url(../images/matchImages/icon_zuhe.png) 0.18rem center no-repeat;
+	background-size: 0.18rem 0.18rem;
+}
+
+.header_inner .xl_menu li:nth-child(3) a {
+	background: url(../images/matchImages/icon_invests.png) 0.18rem center no-repeat;
+	background-size: 0.15rem 0.18rem;
+}
+
+.header_inner .xl_menu li:nth-child(4) a {
+	background: url(../images/matchImages/icon_quertions.png) 0.18rem center no-repeat;
+	background-size: 0.15rem 0.18rem;
+}
+
+.header_inner .xl_menu li:nth-child(5) a {
+	background: url(../images/matchImages/icon_followme.png) 0.18rem center no-repeat;
+	background-size: 0.17rem 0.17rem;
+}
+
+.header_inner .close_iocn {
+	background: url(../images/matchImages/close_iocn3.png) center no-repeat;
+	background-size: 0.16rem;
+}
+/*模拟炒股*/
+.top_nav {
+	height: 38px;
+	background: #FFFFFF;
+}
+
+.top_nav a {
+	display: block;
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	line-height: 0.36rem;
+}
+
+.top_nav a.act {
+	color: #0689DC;
+	 border-bottom: 0.02rem solid #0689DC; 
+}
+
+/*模拟炒股持仓*/
+.entrust_list .item_box,.holdings_list .item_box {
+	margin-top: 12px;
+	background: #FFFFFF;
+	padding: 0.15rem;
+}
+
+.entrust_list .item_box .li_tit {
+	border-bottom: 0.01rem dashed #D9D9D9;
+}
+
+/*交易动态加载更多样式*/
+.load_add {
+  display: block;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  color:#2a8ee3;
+  font-size: 12px;
+  border-radius: 5px;
+  background: #fff;
+
+}
+
+.entrust_list .li_tit .time {
+	display: block;
+	float: right;
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.3rem;
+}
+
+.entrust_list .li_tit h3 {
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+}
+
+.entrust_list .box_list h4 {
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+	color: #333333;
+	font-weight: normal;
+	padding-top: 0.05rem;
+}
+
+.entrust_list .box_list span {
+	display: inline-block;
+	margin-right: 0.05rem;
+	font-size: 0.12rem;
+	color: #999999;
+}
+
+.entrust_list .box_list li {
+	width: 50%;
+	float: left;
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.22rem;
+}
+
+.header_inner .date_iocn {
+	background: url(../images/matchImages/iocn_12.png) center no-repeat;
+	background-size: 0.18rem 0.17rem;
+}
+
+.entrust_list .item_box_con {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.entrust_list .item_box_con .rounded {
+	width: 0.75rem;
+	border: 0.01rem dashed #E5E5E5;
+	text-align: center;
+	padding: 0.1rem 0;
+}
+
+.entrust_list .item_box_con .rounded h3 {
+	font-size: 0.14rem;
+	font-weight: normal;
+	line-height: 0.2rem;
+}
+
+.entrust_list .item_box_con .rounded p {
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin-bottom: 0;
+}
+
+.entrust_list .item_box_con .rounded span {
+	display: block;
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.2rem;
+}
+
+.entrust_list .list_info {
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+}
+
+.entrust_list .li_tit .withdrawals {
+	display: block;
+	float: right;
+	font-size: 0.14rem;
+	color: #4586eb;
+	line-height: 0.25rem;
+}
+
+.entrust_list .list_info .li_tit h3 {
+	font-weight: normal;
+	font-size: 0.14rem;
+	color: #333333;
+}
+
+.entrust_list .list_info .li_tit h3 span {
+	display: inline-block;
+	margin-right: 0.05rem;
+	font-size: 0.12rem;
+	color: #999999;
+}
+
+.entrust_list .list_info .li_tit,.entrust_list .list_info .box_list {
+	padding-left: 0.1rem;
+}
+
+.ceate_page {
+	border-top: none;
+	padding-top: 0.2rem;
+}
+
+.ceate_page .login_box .nickname_text {
+	padding-left: 0.9rem !important;
+}
+
+.ceate_page .login_box .textarea_box h3 span {
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.2rem;
+}
+
+
+.holdings_list .property_box li {
+	width: 33.33%;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-border-radius: border-box;
+	padding-left: 0.1rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+}
+
+.holdings_list .property_box li .li_con {
+	border-right: 0.01rem dashed #D9D9D9;
+}
+
+.holdings_list .property_box li:nth-child(3n) .li_con {
+	border-right: none;
+}
+
+.holdings_list .property_box li:nth-child(3n+1) {
+	padding-left: 0;
+}
+
+.holdings_list .property_box li h4 {
+	font-weight: normal;
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.2rem;
+}
+
+.holdings_list .property_box li span {
+	display: block;
+	font-size: 0.16rem;
+	color: #333333;
+	line-height: 0.2rem;
+}
+
+.holdings_list .property_box li:nth-child(1),.holdings_list .property_box li:nth-child(2),.holdings_list .property_box li:nth-child(3)
+	{
+	border-bottom: 0.01rem solid #D9D9D9;
+}
+
+.holdings_list .item_box {
+	padding: 0.1rem;
+}
+
+.holdings_list .item_box .ui.table th {
+	font-size: 0.12rem;
+	color: #999999;
+	text-align: center;
+	padding: 0;
+	line-height: 0.3rem;
+}
+
+.holdings_list .item_box .ui.table td {
+	padding: 0.1rem 0;
+	text-align: center;
+}
+
+.holdings_list .item_box .ui.table td p {
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin-bottom: 0;
+}
+
+.holdings_list .item_box .li_tit {
+	border-bottom: 0.01rem dashed #D9D9D9;
+}
+
+.holdings_list .item_box .li_tit h3 {
+	font-size: 0.14rem;
+	color: #999999;
+	line-height: 0.3rem;
+}
+
+.holdings_list .item_box .int_txt {
+	padding: 0.1rem 0;
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.2rem;
+}
+
+/*鍗栧嚭*/
+.stock_box_list {
+	padding: 0.12rem 0;
+}
+
+.stock_box_list .trading_table {
+	padding: 0 0.03rem;
+}
+
+.stock_box_list .trading_table ul {
+	border-top: 0.01rem dashed #CCCCCC;
+	padding: 0.1rem 0;
+}
+
+.stock_box_list .trading_table ul:last-of-type {
+	border-bottom: 0.01rem dashed #CCCCCC;
+}
+
+.stock_box_list .trading_table li a {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.stock_box_list .trading_table li span {
+	display: table-cell;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.25rem;
+}
+
+.stock_box_list .trading_table li a.act {
+	background: #F0F8FF;
+	border: 0.01rem solid #1199EE;
+}
+
+.stock_trading .lower_table {
+	background: #FFFFFF;
+}
+
+.stock_trading .lower_table .ui.table th {
+	font-size: 0.12rem;
+	color: #999999;
+	text-align: center;
+	padding: 0;
+	line-height: 0.35rem;
+}
+
+.stock_trading .lower_table .ui.table td {
+	padding: 0.1rem 0;
+	text-align: center;
+}
+
+.stock_trading .lower_table .ui.table td p {
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin-bottom: 0;
+}
+
+.stock_trading .lower_table .ui.table td h4 {
+	font-size: 0.14rem;
+	color: #666666;
+	line-height: 0.2rem;
+}
+
+.stock_trading .lower_table .ui.table td span {
+	display: block;
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.2rem;
+}
+
+.trading_text_box {
+	border-right: 0.01rem solid #FFFFFF;
+}
+
+.trading_text_box .text_det {
+	background: #FFFFFF;
+}
+
+.ui.field.text.rounded>.ui.dropdown {
+	border: none;
+}
+
+.trading_text_box .ui.field>.ui.dropdown>strong,.trading_text_box .ui.dropdown a
+	{
+	font-size: 0.14rem;
+	color: #333333;
+	font-weight: bold;
+	padding-right: 0.1rem
+}
+
+.trading_text_box .ui.field>.ui.dropdown>strong:after {
+	content: "";
+	border: none;
+}
+
+.trading_text_box .ui.field>.ui.dropdown>strong span,.trading_text_box .ui.dropdown a span
+	{
+	display: inline-block;
+	font-size: 0.12rem;
+	color: #999999;
+	font-weight: normal;
+	margin-left: 0.2rem;
+}
+
+.trading_text_box .tips_box {
+	height: 0.35rem;
+	padding: 0 0.12rem;
+}
+
+.trading_text_box .tips_box span {
+	display: block;
+	font-size: 0.12rem;
+	color: #999999;
+	font-weight: normal;
+	line-height: 0.35rem;
+}
+
+.trading_text_box .tips_box .fr {
+	float: right;
+}
+
+.trading_text_box .tips_box span em {
+	display: inline-block;
+	margin-left: 0.05rem;
+	font-weight: bold;
+}
+
+.trading_text_box .tips_box span i {
+	font: bold 0.12rem/0.35rem arial;
+	display: inline-block;
+	margin: 0 0.05rem;
+}
+
+.trading_text_box .buy_btn_box {
+	padding: 0.1rem;
+}
+
+.buy_btn_box .login_btn .ui.button {
+	background: #FF7711;
+}
+
+.buy_btn_box2 .login_btn .ui.button {
+	background: #1199EE;
+}
+
+.text_det .modified {
+	background: #FFFFFF;
+	height: 0.44rem;
+	position: relative;
+}
+
+.text_det .modified p {
+	font-size: 0.14rem;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	line-height: 0.44rem;
+}
+
+.text_det .modified a {
+	display: block;
+	width: 0.22rem;
+	height: 0.22rem;
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	line-height: 0.22rem;
+	text-align: center;
+	background: #FF7711;
+	font-weight: bold;
+	font-family: arial;
+}
+
+.text_det .modified_02 a {
+	background: #1199EE;
+}
+
+.text_det .modified .less_btn {
+	position: absolute;
+	left: 0.12rem;
+	top: 50%;
+	margin-top: -0.11rem;
+}
+
+.text_det .modified .add_btn {
+	position: absolute;
+	right: 0.12rem;
+	top: 50%;
+	margin-top: -0.11rem;
+}
+
+.trading_text_box .ui.field {
+	position: relative;
+}
+
+.trading_text_box .ui.field>.ui.input:focus {
+	outline: 0;
+	border-color: #F86A31 !important;
+}
+
+.trading_text_box .ui.field.border>.ui.input {
+	border: 1px solid #F7F7F7;
+}
+
+.trading_text_box .fr_txt {
+	display: block;
+	width: 0.4rem;
+	height: 0.44rem;
+	font-size: 0.12rem;
+	color: #999999;
+	text-align: center;
+	line-height: 0.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.trading_text_box .text_det .ui.tag {
+	width: 0.9rem;
+	background: #333333;
+	position: absolute;
+	top: 0.35rem;
+	left: 50%;
+	margin-left: -0.45rem;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.trading_text_box .text_det input {
+	font-weight: bold;
+	color: #333333;
+	font-size: 0.14rem;
+}
+
+.trading_text_box .text_det .stock_name {
+	display: block;
+	height: 0.42rem;
+	background: #FFFFFF;
+	font-size: 0.12rem;
+	color: #999999;
+	font-weight: normal;
+	position: absolute;
+	top: 0.01rem;
+	right: 0.1rem;
+	padding-left: 0.05rem;
+}
+
+/*模拟炒股*/
+.inquire_list li {
+	margin-top: 12px;
+	background: #FFFFFF;
+	padding: 0 0.15rem;
+}
+
+.inquire_list li a {
+	display: block;
+	height: 0.36rem;
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.35rem;
+	border-bottom: 0.01rem dashed #E8E8E8;
+	position: relative;
+}
+
+.inquire_list li a:last-of-type {
+	border-bottom: none;
+}
+
+.inquire_list li a:after {
+	content: "";
+	display: block;
+	width: 0.07rem;
+	height: 0.14rem;
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	margin-top: -0.035rem;
+	background: url(../images/matchImages/iocn_11.png) center no-repeat;
+	background-size: 0.07rem 0.14rem;
+}
+
+/*历史成交 */
+.history_order {
+	background: #fff;
+	padding: 2px 0;
+	display: table;
+	width: 100%;
+	color: #666
+}
+
+.his_date,.his_icon,.his_button {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center
+}
+
+.his_date {
+	width: 36%;
+	min-width: 100px;
+	padding: 0 2%
+}
+
+.his_button {
+	vertical-align: bottom;
+	padding-right: 2%
+}
+
+.his_icon {
+	background: url(../images/matchImages/icon_trade2.png) no-repeat center -468px;
+	background-size: 40px auto;
+	width: 24px
+}
+
+.his_date_put {
+	height: 30px;
+	border: 0;
+	background: none;
+	border: 1px solid #009BE7;
+	width: 95%;
+	min-width: 70px;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	margin-top: 3px
+}
+
+.his_search_btn {
+	height: 33px;
+	line-height: 33px;
+	border-radius: 3px;
+	background: #009BE7;
+	border: 0 none;
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+/*2016-03-17 大赛首页*/
+     /*头部*/
+
+.header_inner{
+	height:0.44rem;
+	line-height:0.44rem;
+	background: #2c4669;
+	position: relative;
+	z-index: 999;
+}
+.header_inner h1{
+	font-size: 0.18rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.44rem;
+	font-weight: normal;
+}
+.header_inner .user_btn {
+	width:0.44rem;
+	height:0.44rem;
+	display: block;
+	background: url(../images/matchImages/user_icon3.png) center no-repeat;
+	background-size: 0.44rem;
+	position: absolute;
+	left:0;
+	top:0;
+}
+/* .header_inner .search_btn {
+	width:0.44rem;
+	height:0.44rem;
+	display: block;
+	background: url(../images/matchImages/search_btn.png) center no-repeat;
+	background-size: 0.44rem;
+	position: absolute;
+	right:0;
+	top:0;
+} */
+
+.header_inner .login_btn{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	background: url(../images/matchImages/login_icon.png) center no-repeat;
+	background-size: 0.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.header_inner .back_btn{
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url(../images/matchImages/back_btn.png) center no-repeat;
+	background-size: 0.44rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.header_inner .rt_txt{
+	display: block;
+	padding: 0 0.15rem;
+	font-size: 0.16rem;
+	color: #FFFFFF;
+	line-height: 0.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.header_inner .share_btn{
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url(../images/matchImages/share_icon.png) center no-repeat;
+	background-size: 0.44rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+
+
+/*股战场*/
+.game_box{
+	background: #FFFFFF;
+}
+.game_box .tit{
+	padding: 0 0.1rem;
+	background: #FFFFFF;
+}
+.game_box .tit h3 span{
+	color: #999999;
+}
+.game_box .game_box_mes{
+	padding: 0.1rem;
+}
+.game_box .game_box_mes .process_icon{
+	width: 0.54rem;
+	height: 0.54rem;
+	margin-right: 0.15rem;
+}
+.ongoing{
+	background: url(../images/matchImages/ongoing_icon.png) center no-repeat;
+	background-size: 0.54rem;
+}
+.end{
+	background: url(../images/matchImages/end_icon.png) center no-repeat;
+	background-size: 0.54rem;
+}
+.game_box .game_box_mes h4{
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.2rem;
+	font-weight: normal;
+	margin-bottom: 0.05rem;
+}
+.game_box .game_box_mes .row-1{
+	padding-top: 0.05rem;
+}
+.game_box .game_box_mes p{
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.2rem;
+	margin:0;
+}
+.game_box .game_box_mes .soon {
+    background: url(../images/matchImages/soon_icon.png) center no-repeat;
+    background-size: 0.54rem;
+}
+.ongoing {
+    background: url(../images/matchImages/ongoing_icon.png) center no-repeat;
+    background-size: 0.54rem;
+}
+.end {
+    background: url(../images/matchImages/end_icon.png) center no-repeat;
+    background-size: 0.54rem;
+}
+
+/*赛场详情*/
+
+.arena_con_list .arena_box_01{
+	padding: 0.12rem 0.15rem;
+	background: #FFFFFF;
+}
+.arena_box_01 .box_tit{
+	margin-bottom: 0.05rem;
+}
+.arena_box_01 .box_tit h3{
+	font-size: 0.14rem;
+	color: #666;
+	font-weight: normal;
+	line-height: 0.32rem;
+	background: url(../images/matchImages/sign_icon.png) left center no-repeat;
+	background-size: 0.32rem;
+	padding-left: 0.35rem;
+}
+.arena_box_01 .box_tit .sign_btn{
+	display: block;
+	width: 0.62rem;
+	height: 0.26rem;
+	background: #f48c56;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.26rem;
+	margin-top: 0.02rem;
+}
+.arena_box .box_txt{
+	padding-top: 0.05rem;
+}
+.arena_box .box_txt p{
+	font-size: 0.12rem;
+	color: #666;
+	line-height: 0.2rem;
+	margin: 0;
+	margin-bottom: 0.05rem;
+}
+.arena_box .box_txt p span{
+	color: #333;
+}
+.arena_box .box_txt p em{
+	display: inline-block;
+	margin-left: 0.05rem;
+	font-size: 0.14rem;
+}
+.arena_box .box_txt p .ared.ts,
+.arena_box .box_txt_ts p span{
+	font-family: 'PFDin';
+	display: inline-block;
+}
+.arena_box .tit{
+	padding: 0 0.1rem;
+}
+.arena_box .box_tit2 h3{
+	font-size: 0.16rem;
+	color: #333;
+	line-height: 0.36rem;
+}
+.arena_box_03{
+	background: #FFFFFF;
+}
+.arena_box_02 .box_txt,
+.arena_box_03 .box_txt{
+	padding: 0.1rem 0.15rem;
+}
+
+.arena_box_01 .btn_box{
+	padding: 0.1rem 0 0.05rem;
+}
+.arena_box_01 .btn_box .row-1 a{
+	display: block;
+	height: 0.28rem;
+	background: #FF050A;
+	margin:0 0.1rem;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	line-height: 0.28rem;
+	text-align: center;
+}
+
+.arena_con_list .arena_nav li{
+	height: 0.4rem;
+	position: relative;
+	background: #FFFFFF;
+	padding-left: 0.15rem;
+}
+.arena_con_list .arena_nav li:last-of-type a{
+	border-bottom: 0;
+}
+.arena_con_list .arena_nav li a{
+	display: block;
+	height: 0.4rem;
+	font-size: 0.16rem;
+	color: #333;
+	line-height: 0.4rem;
+	border-bottom: 0.01rem solid #E5E5E5;
+}
+
+.arena_con_list .arena_nav li:after{
+	content: "";
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border: 0.02rem solid #9A9690;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    position: absolute;
+    right: 0.15rem;
+    top: 50%;
+    margin-top: -0.04rem;
+}
+.arena_box_02 .box_txt p,
+.arena_box_03 .box_txt p{
+	color: #666666;
+}
+
+.arena_box .xl_btn{
+	display: block;
+	height: 0.2rem;
+	background: url(../images/matchImages/xl_pic.png) center bottom  no-repeat;
+	background-size: 0.16rem;
+}
+
+.ranking_list li{
+	padding: 0.12rem 0.15rem;
+	background: #FFFFFF;
+	margin-bottom: 0.1rem;
+}
+.ranking_list li .li_up .pic_box{
+	width: 0.76rem;
+	height: 0.58rem;
+	float: left;
+	background: url(../images/matchImages/portrait_bg.png) center bottom no-repeat;
+	background-size: 0.76rem 0.18rem;
+	position: relative;
+}
+.ranking_list li .li_up .txt_box{
+	margin-left: 1.06rem;
+}
+.ranking_list li .li_up{
+	margin-bottom: 0.05rem;
+}
+.ranking_list li .pic_box em{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0 auto;
+}
+.ranking_list li .pic_box em img{
+	width: 0.5rem;
+}
+.ranking_list li .pic_box span{
+	display: block;
+	width: 0.54rem;
+	height: 0.18rem;
+	background: #f35833;
+	font-size: 0.12rem;
+	color: #f9fcff;
+	text-align: center;
+	line-height: 0.18rem;
+	position: absolute;
+	left: 50%;
+	bottom: -0.03rem;
+	margin-left: -0.27rem;
+}
+.ranking_list li .pic_box span i{
+	display: inline-block;
+	width: 0.14rem;
+	height: 0.18rem;
+	vertical-align: top;
+	margin-right: 0.02rem;
+}
+.ranking_list li .pic_box span .num_01{
+	background: url(../images/matchImages/num_p1.png) center top no-repeat;
+	background-size: 0.14rem 0.18rem;
+}
+.ranking_list li .pic_box span .num_02{
+	background: url(../images/matchImages/num_p2.png) center top no-repeat;
+	background-size: 0.14rem 0.18rem;
+}
+.ranking_list li .pic_box span .num_03{
+	background: url(../images/matchImages/num_p3.png) center top no-repeat;
+	background-size: 0.14rem 0.18rem;
+}
+.ranking_list li .txt_box h4{
+	font-size: 0.14rem;
+	color: #666666;
+	line-height: 0.2rem;
+	font-weight: normal;
+	margin-bottom: 0.05rem;
+}
+.ranking_list li .txt_box p{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.22rem;
+	margin: 0;
+}
+.ranking_list li .txt_box p span{
+	font-size: 0.16rem;
+	color: #f35833;
+	line-height: 0.2rem;
+	font-family: 'PFDin';
+}
+.ranking_list li .txt_box p em{
+	font-size: 0.12rem;
+	color: #f35833;
+}
+.ranking_list li .li_lower p{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin: 0;
+}
+
+/*赛场详情-即将开始*/
+.arena_box .box_tit2{
+	padding: 0 0.15rem;
+	border-bottom: 0.01rem solid #E1DFDA;
+	background: #FFFFFF;
+}
+.arena_box .box_tit2 .tips{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.4rem;
+	margin: 0;
+}
+.arena_box .box_tit2 .tips i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.4rem;
+	background: url(../images/matchImages/ld_icon.png) center no-repeat;
+	background-size: 0.2rem;
+	vertical-align: top;
+}
+.arena_box .link_list a{
+	display: block;
+	background: #FFFFFF;
+	padding: 0 0.15rem;
+	height: 0.4rem;
+	position: relative;
+}
+.arena_box .link_list .xxx:after{
+	content: "";
+	width: 0.16rem;
+	height: 0.4rem;
+	background: url(../images/matchImages/direction_icon.png) center no-repeat;
+	background-size: 0.16rem;
+	position: absolute;
+	right: 0.15rem;
+	top: 0;
+}
+.arena_box .link_list .link_01{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.4rem;
+}
+.arena_box .link_list .link_02{
+	font-size: 0.14rem;
+	color: #666666;
+	line-height: 0.4rem;
+}
+.arena_box .process_list{
+	padding: 0.12rem 0;
+}
+.arena_box .process_list li span{
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border: 0.01rem solid #f48c56;
+	margin: 0 auto;
+	font-size: 0.12rem;
+	color: #f48c56;
+	line-height: 0.2rem;
+	text-align: center;
+	padding: 0 0.05rem;
+	line-height: 0.44rem;
+}
+.arena_box .process_list li{
+	display: block;
+	position: relative;
+}
+.arena_box .process_list li:after{
+	content: "";
+	width: 0.16rem;
+	height: 0.16rem;
+	background: url(../images/matchImages/direction_icon.png) center no-repeat;
+	background-size: 0.16rem;
+	position: absolute;
+	right: -0.08rem;
+	top: 50%;
+	margin-top: -0.08rem;
+}
+.arena_box .process_list li:last-of-type:after{
+	width: 0;
+	height: 0;
+	background: none;
+}
+.arena_box .process_list li span em{
+	display: block;
+	line-height: 0.16rem;
+	padding: 0.05rem 0;
+}
+.arena_box .process_list li.current span{
+	background: #f48c56;
+	color: #FFFFFF;
+}
+
+/*进行中*/
+.top_tips_box{
+	height: 0.38rem;
+	background: #d2edfd;
+}
+.top_tips_box p{
+	font-size: 0.17rem;
+	color: #ff5533;
+	text-align: center;
+	line-height: 0.38rem;
+	margin: 0;
+}
+.top_tips_box p i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.38rem;
+	background: url(../images/matchImages/ld_icon.png) center no-repeat;
+	background-size: 0.24rem;
+	vertical-align: top;
+}
+
+/*排行榜*/
+.top_nav{
+	height: 0.33rem;
+	background: #FFFFFF;
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+.top_nav a {
+    display: block;
+    font-size: 0.16rem;
+    color: #666666;
+    text-align: center;
+}
+.top_nav a span {
+    display: inline-block;
+    font-size: 0.16rem;
+    color: #666666;
+    line-height: 0.33rem;
+    padding: 0 0.05rem;
+    position: relative;
+}
+.top_nav a.act span {
+    color: #2c4669;
+}
+.top_nav a.act span:after {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-bottom: 0.02rem solid #2c4669;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.top_tips_box2{
+	padding-left: 0.15rem;
+}
+.top_tips_box2 p{
+	text-align: left;
+	color: #666666;
+}
+.top_tips_box2 p span{
+	font-family: 'PFDin';
+	font-size: 0.16rem;
+	color: #ff5533;
+}
+
+.leaderboard_list li{
+	padding: 0.12rem  0.15rem;
+	background: #FFFFFF;
+	margin-bottom: 0.1rem;
+}
+.leaderboard_list li:last-of-type{
+	margin-bottom: 0;
+}
+.leaderboard_list li .round_box{
+    width: 0.72rem;
+    height: 0.72rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-right: 0.15rem;
+}
+.leaderboard_list li .round_box span{
+	display: block;
+	font-size: 0.1rem;
+    color: #FFFFFF;
+    line-height: 0.15rem;
+    text-align: center;
+    padding-top: 0.18rem;
+    margin: 0;
+}
+
+.leaderboard_list li:nth-child(6n+1) .round_box{
+	background: #7189e8;
+}
+.leaderboard_list li:nth-child(6n+2) .round_box{
+	background: #fda237;
+}
+.leaderboard_list li:nth-child(6n+3) .round_box{
+	background: #ff7b60;
+}
+.leaderboard_list li:nth-child(6n+4) .round_box{
+	background: #e9bd70;
+}
+.leaderboard_list li:nth-child(6n+5) .round_box{
+	background: #46bcc3;
+}
+.leaderboard_list li:nth-child(6n+6) .round_box{
+	background: #72affa;
+}
+.leaderboard_list li .round_box strong{
+	display: block;
+	font-family: 'PFDin';
+    font-size: 0.17rem;
+    color: #FFFFFF;
+    line-height: 0.24rem;
+    text-align: center;
+    font-weight: normal;
+}
+.leaderboard_list li .round_box i{
+    font-size: 0.1rem;
+    font-style: normal;
+}
+.leaderboard_list .li_info .label_box {
+    margin-bottom: 0.05rem;
+}
+
+.leaderboard_list .li_info .label_box .ui.tag {
+    background: #f48c56;
+    color: #FFFFFF;
+}
+.leaderboard_list .li_info .label_box span {
+    display: inline-block;
+    padding: 0.03rem 0.05rem;
+    margin-right: 0.05rem;
+    font-size: 0.12rem;
+    color: #666666;
+    line-height: 0.12rem;
+    text-align: center;
+}
+.leaderboard_list .li_info .mes_box p {
+    font-size: 0.12rem;
+    color: #f48c56;
+    line-height: 0.2rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0.05rem;
+}
+.leaderboard_list .li_info .mes_box h4 {
+    font-size: 0.14rem;
+    color: #999999;
+    line-height: 0.2rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    margin-bottom: 0.05rem;
+}
+.leaderboard_list .li_info .mes_box .user {
+    display: inline-block;
+    margin-right: 0.1rem;
+    background: url(../images/matchImages/user_icon.png) left center no-repeat;
+    background-size: 0.12rem;
+    padding-left: 0.15rem;
+    font-size:0.16rem;
+    color: #999999;
+}
+.leaderboard_list .li_rt .att_btn{
+	display: block;
+	width: 0.45rem;
+	height: 0.24rem;
+	border: 0.01rem solid #f48c56;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+	font-size: 0.11rem;
+	text-align: center;
+	line-height: 0.24rem;
+	color: #f48c56;
+	margin-bottom: 0.12rem;
+}
+
+.leaderboard_list .li_rt .num_btn {
+	display: block;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: #ffab19;
+    border: 0;
+    font-size: 0.12rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.24rem;
+    border-radius: 0.05rem;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    margin: 0 auto;
+}
+.leaderboard_list li:nth-child(1) .li_rt .num_btn {
+    background: url(../images/matchImages/ranking_p1.png) center no-repeat;
+    background-size: 0.22rem 0.34rem;
+    font-size: 0.12rem;
+    line-height: 0.46rem;
+    height: 0.34rem;
+}
+.leaderboard_list li:nth-child(2) .li_rt .num_btn {
+    background: url(../images/matchImages/ranking_p2.png) center no-repeat;
+    background-size: 0.22rem 0.34rem;
+    font-size: 0.12rem;
+    line-height: 0.46rem;
+    height: 0.34rem;
+}
+.leaderboard_list li:nth-child(3) .li_rt .num_btn {
+    background: url(../images/matchImages/ranking_p3.png) center no-repeat;
+    background-size: 0.22rem 0.34rem;
+    font-size: 0.12rem;
+    line-height: 0.46rem;
+    height: 0.34rem;
+}
+
+/*参赛名单*/
+.entry_box_list li{
+	padding: 0.12rem 0.15rem;
+	background: #FFFFFF;
+	border-bottom: 0.01rem solid #dddddd;
+}
+.entry_box_list li:last-of-type{
+	border-bottom: 0;
+}
+.entry_box_list li .lt_pic{
+	margin-right: 0.1rem;
+}
+.entry_box_list li .lt_pic img{
+	width: 0.44rem;
+	height: 0.44rem;
+}
+.entry_box_list li .in_txt p{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.22rem;
+	margin: 0;
+}
+.entry_box_list li .in_txt p span{
+	font-family: 'PFDin';
+	font-size: 0.18rem;
+	color: #ff5533;
+}
+.entry_box_list li .rt_btn .gz_btn{
+	display: block;
+	width:0.45rem;
+	height: 0.24rem;
+	border: 0.01rem solid #244762;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+	background: url(../images/matchImages/gz_icon.png) center no-repeat;
+	background-size: 0.18rem 0.24rem;
+	margin-top: 0.1rem;
+}
+.entry_box_list li .rt_btn .gz_btn_act{
+	background: url(../images/matchImages/gz_icon2.png) center no-repeat;
+	background-size: 0.18rem 0.24rem;
+	border: 0.01rem solid #f48c56;
+}
+
+/*比赛动态*/
+.dynamic_item{
+    background: #FFFFFF;
+    margin-bottom: 0.1rem;
+}
+.playing_activity div.dynamic_item:last-of-type{
+	margin-bottom: 0;
+}
+.dynamic_item .tit {
+    padding: 0 0.15rem;
+    height: 0.4rem;
+    border-bottom: 0.01rem solid #E5E5E5;
+}
+.dynamic_item .tit span {
+    display: block;
+    font-size: 0.12rem;
+    color: #999999;
+    line-height: 0.4rem;
+    float: right;
+    font-family: 'PFDin';
+}
+.dynamic_item .tit h3 {
+    font-size: 0.16rem;
+    color: #333333;
+    line-height: 0.4rem;
+}
+.dynamic_item .ui.table tr th, 
+.dynamic_item .ui.table tr td {
+    line-height: 0.2rem;
+    border-bottom: 0.01rem solid #E5E5E5;
+    vertical-align: middle;
+    text-align: center;
+}
+.dynamic_item .ui.table tr th{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.3rem;
+	height: 0.3rem;
+	padding: 0;
+	background: #f9f9f9;
+}
+.dynamic_item .item_table td h4 {
+    font-size: 0.14rem;
+    color: #333333;
+    font-weight: normal;
+}
+.dynamic_item .item_table td span {
+    display: block;
+    font-size: 0.12rem;
+    color: #333333;
+    font-family: 'PFDin';
+}
+.dynamic_item .item_table td {
+    padding: 0.08rem 0 !important;
+    font-size: 0.14rem;
+    color: #333333;
+    text-align: center;
+}
+.dynamic_item .item_table tr td:nth-child(even) {
+    font-family: 'PFDin';
+}
+
+
+/*持仓详情-已结束*/
+.header_inner_02{
+	border-bottom: 0.01rem solid #687784;
+}
+.income_top_box{
+	background: #2c4669;
+}
+.income_top_box .income_up{
+	padding: 0.2rem 0;
+	border-bottom: 0.01rem solid #687784;
+}
+.income_top_box .income_up h4{
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	line-height: 0.2rem;
+	text-align: center;
+	margin-bottom: 0.1rem;
+	font-weight: normal;
+}
+.income_top_box .income_up strong{
+	display: block;
+	font-size: 0.56rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.6rem;
+	font-family: 'PFDin';
+}
+.income_top_box .income_up strong span{
+	font-size: 0.18rem;
+	font-weight: normal;
+	line-height: 0.2rem;
+}
+.income_top_box .income_lower{
+	padding: 0.15rem 0;
+}
+.income_top_box .income_lower p,
+.income_top_box .income_lower span,
+.income_top_box .income_lower a{
+	display: block;
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	line-height: 0.2rem;
+	text-align: center;
+}
+.income_top_box .income_lower p{
+	margin-bottom: 0.05rem;
+}
+.income_top_box .income_lower a{
+	position: relative;
+	line-height: 0.45rem;
+}
+.income_top_box .income_lower a:before{
+	content: "";
+	width: 0.16rem;
+	height: 0.16rem;
+	background: url(../images/matchImages/direction_icon2.png) center no-repeat;
+	background-size: 0.16rem;
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	margin-top: -0.08rem;
+}
+.income_top_box .income_lower .row-1{
+	position: relative;
+}
+.income_top_box .income_lower div.row-1:nth-child(1):after{
+	content: "";
+	width: 0;
+	height: 0.4rem;
+	border-right: 0.01rem solid rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -0.2rem;
+}
+.positions_det .user_box,
+.positions_det .contest_info{
+	padding: 0.12rem 0.15rem;
+	background: #FFFFFF;
+}
+.positions_det .user_box{
+	border-bottom: 0.01rem solid #dddddd;
+}
+.positions_det .user_box .lt_pic{
+	width: 0.42rem;
+	margin-right: 0.15rem;
+}
+.positions_det .user_box .lt_pic img{
+	width: 0.42rem;
+	height: 0.42rem;
+}
+.positions_det .user_box .rt_txt p{
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.42rem;
+	margin: 0;
+}
+.positions_det .contest_info h3{
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.32rem;
+	padding-left: 0.4rem;
+	position: relative;
+}
+.positions_det .contest_info h3:before{
+	content: "";
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url(../images/matchImages/sign_icon.png) left center no-repeat;
+	background-size: 0.32rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.income_top_box2 .income_up{
+	padding: 0.08rem 0.15rem 0.15rem;
+}
+.income_top_box2 .income_up .up_tit span {
+    display: inline-block;
+    font-size: 0.12rem;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+    padding: 0 0.05rem;
+}
+.income_top_box2 .income_up .up_tit .fr{
+    float: right;
+    padding: 0;
+}
+.income_top_box2 .income_up .up_tit .fr em,
+.income_top_box .income_lower2 span{
+	font-family: 'PFDin';
+}
+.income_top_box2 .income_up .up_tit .tag{
+	background: #566b87;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+}
+.income_top_box2 .income_up .up_tit{
+	margin-bottom: 0.25rem;
+}
+.income_top_box2 .income_up strong{
+	display: inline-block;
+	text-align: left;
+}
+.income_top_box2 .income_up .sy_total{
+	display: inline-block;
+	margin-left: 0.05rem;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	line-height: 0.2rem;
+}
+.income_top_box .income_lower2 div.row-1:nth-child(1):after{
+	content: " ";
+	border: 0;
+}
+.income_top_box .income_lower2 .row-2{
+	position: relative;
+}
+.income_top_box .income_lower2 .row-2:after{
+	content: "";
+	width: 0;
+	height: 0.4rem;
+	border-left: 0.01rem solid rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.2rem;
+}
+.positions_det .contest_info .fr_txt{
+	float: right;
+}
+.positions_det .contest_info .fr_txt p{
+	font-size: 0.12rem;
+	color: #333333;
+	text-align: center;
+	line-height: 0.14rem;
+	margin-bottom: 0.05rem;
+}
+.positions_det .contest_info .fr_txt span{
+	display: block;
+	text-align: center;
+	font-size: 0.14rem;
+	line-height: 0.16rem;
+	font-family: 'PFDin';
+	color: #f48c56;
+}
+.positions_det .user_box .lx_txt h4{
+	font-size: 0.14rem;
+	color: #f48c56;
+	text-align: center;
+	line-height: 0.22rem;
+	font-weight: normal;
+}
+.positions_det .user_box .lx_txt span{
+	display: block;
+	font-size: 0.11rem;
+	color: #999999;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.pos_assets_box{
+	padding: 0.1rem 0;
+	background: #FFFFFF;
+	border-top: 0.01rem solid #dddddd;
+}
+.pos_assets_box p{
+	font-size: 0.11rem;
+	color: #999999;
+	text-align: center;
+	line-height: 0.2rem;
+	margin: 0 0 0.05rem;
+}
+.pos_assets_box span{
+	display: block;
+	font-size: 0.14rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.2rem;
+	font-family: 'PFDin';
+}
+.dynamic_trading_list{
+	padding: 0 0.15rem;
+	background: #FFFFFF;
+}
+.dynamic_trading_list .tab{
+	height: 0.42rem;
+	border-bottom: 0.01rem solid #e6e6e6;
+}
+
+.dynamic_trading_list .tab .row-1 a{
+	display: block;
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.42rem;
+	text-align: center;
+	position: relative;
+}
+.dynamic_trading_list .tab .row-1 a.act{
+	color: #2c4669;
+}
+.dynamic_trading_list .tab .row-1 a.act:before{
+	content: " ";
+	width: 100%;
+	height: 0;
+	border-bottom: 0.02rem solid #2c4669;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.dynamic_trading_list .tab_con_det2{
+	padding-left: 0.05rem;
+}
+.dynamic_trading_list .tab_con_det2 .det2_con {
+    border-left: 0.01rem solid #E1DFDA;
+}
+.dynamic_trading_list .tab_con_det2 .list_detail{
+    padding: 0.15rem 0.1rem 0.15rem 0.2rem;
+}
+.dynamic_trading_list .list_detail .list_item {
+    position: relative;
+    margin-bottom: 0.1rem;
+}
+.dynamic_trading_list .list_detail  .list_item:before {
+    content: "";
+    width: 0.18rem;
+    height: 0.18rem;
+    border: 0.01rem solid #EBEDEE;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #FFFFFF url(../images/matchImages/dynamic_icon.png) center no-repeat;
+    background-size: 0.16rem;
+    position: absolute;
+    left: -0.3rem;
+    top: 0;
+}
+
+.dynamic_trading_list .list_detail h3 {
+    font-size: 0.12rem;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.dynamic_trading_list .tab_con .ui.table th {
+    font-size: 0.12rem;
+    color: #888888;
+    text-align: center;
+    padding: 0;
+    line-height: 0.35rem;
+    background: #ECEAE8;
+    border-bottom: 0;
+}
+
+.dynamic_trading_list .tab_con .ui.table td {
+    padding: 0.1rem 0;
+    text-align: center;
+}
+.dynamic_trading_list .list_item td {
+    font-size: 0.12rem;
+    color: #333333;
+}
+
+.dynamic_trading_list .tab_con .ui.table td h4 {
+    font-size: 0.14rem;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.dynamic_trading_list .tab_con .ui.table td span {
+    display: block;
+    font-size: 0.12rem;
+    color: #666666;
+    line-height: 0.15rem;
+    margin-bottom: 0;
+}
+
+.ui.tag.primary2{
+	background: #f48c56;
+	color: #FFFFFF;
+}
+.dynamic_trading_list .ui.table tr:nth-last-child(1) td{
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+
+.footer_btn_con{
+	height: 0.4rem;
+	background: #2c4669;
+}
+.footer_btn_con div.row-1:nth-child(1){
+	border-right: 0.02rem solid #FFFFFF;
+}
+.footer_btn_con .row-1 a{
+	display: block;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.footer_btn_con .row-1 a i{
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.4rem;
+	vertical-align: top;
+}
+.footer_btn_con .row-1 .gz_btn{
+	background: url(../images/matchImages/sc_icon.png) center no-repeat;
+	background-size: 0.32rem 0.4rem;
+}
+.footer_btn_con .row-1 .fx_btn{
+	background: url(../images/matchImages/fx_icon.png) center no-repeat;
+	background-size: 0.32rem 0.4rem;
+}
+
+/*收益走势*/
+.earnings_trend_tit{
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+.earnings_trend_tit h3{
+	font-size: 0.16rem;
+	color: #333333;
+	line-height: 0.45rem;
+}
+.earnings_trend_tit h3 span{
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.45rem;
+}
+.earnings_trend_con .chart_box{
+	padding: 0.2rem 0;
+}
+.chart_annotations{
+	text-align: center;
+	padding: 0.1rem 0;
+}
+.chart_annotations span{
+	display: inline-block;
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.14rem;
+}
+.chart_annotations span i{
+	display: inline-block;
+	width: 0.14rem;
+	height: 0.14rem;
+	vertical-align: top;
+	margin-right: 0.05rem;
+	margin-left: 0.2rem;
+}
+.chart_annotations .bs_01 i{
+	background: #199cee;
+}
+.chart_annotations .bs_02 i{
+	background: #fd9730;
+}
+
+/*持仓详情*/
+.dynamic_trading_list .tab_con .pos_table .ui.table th {
+    font-size: 0.12rem;
+    color: #999999;
+    text-align: center;
+    padding: 0;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    border-bottom: 0.01rem solid #e6e6e6;
+    background: #FFFFFF;
+}
+.dynamic_trading_list .tab_con .pos_table  .ui.table td {
+    padding: 0.1rem 0;
+    text-align: center;
+}
+.dynamic_trading_list .tab_con .pos_table td h4 {
+    font-size: 0.14rem;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.dynamic_trading_list .tab_con .pos_table td p{
+    display: block;
+    font-size: 0.12rem;
+    color: #333;
+    line-height: 0.22rem;
+    margin-bottom: 0;
+    font-family: 'PFDin';
+}
+.dynamic_trading_list .tab_con .pos_table tr:last-of-type td{
+	border-bottom: 0;
+}
+.composite_profile .li_tit{
+	padding: 0 0.15rem;
+	font-size: 0.14rem;
+	color: #666666;
+	line-height: 0.5rem;
+	border-bottom: 0.01rem solid #e6e6e6;
+	background: #FFFFFF;
+}
+.composite_profile .int_txt{
+	padding: 0.15rem;
+	background: #FFFFFF;
+}
+.composite_profile .int_txt p{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin: 0;
+	text-indent: 2em;
+}
+
+/*能力分析*/
+.analysis_box{
+	background: #FFFFFF;
+}
+.analysis_box .an_box1 li{
+	padding: 0.1rem 0;
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+.analysis_box .an_box1 li span{
+	display: block;
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.2rem;
+	text-align: center;
+	margin-bottom: 0.1rem;
+}
+.analysis_box .an_box1 li h3{
+	font-size: 0.16rem;
+	text-align: center;
+	line-height: 0.2rem;
+	font-weight: bold;
+}
+.analysis_box .an_box1 li .row_fl{
+	width: 20%;
+	float: left;
+	border-right: 0.01rem solid #9A9690;
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+  	-webkit-box-pack: center;
+}
+.analysis_box .an_box1 li .row_fc,
+.analysis_box .an_box1 li .row_fr{
+	width: 40%;
+	float: left;
+}
+.analysis_box .an_box1 li .row_fl:after{
+	content: " ";
+	display: block;
+	background: #F4F4F2;
+    width: 0.04rem;
+    height: 0.04rem;
+    border: 0.01rem solid #9A9690;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    position: absolute;
+    right: -0.03rem;
+    top: 50%;
+    margin-top: -0.03rem;
+}
+.analysis_box .an_box1 li em{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 0.01rem solid #666666;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	font-size: 0.12rem;
+	color: #333333;
+	text-align: center;
+	line-height: 0.4rem;
+	margin: 0 auto 0.05rem;
+	font-family: 'PFDin';
+}
+.analysis_box .an_box1 li p{
+	margin: 0;
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	text-align: center;
+}
+.analysis_box .an_box2{
+	padding: 0.1rem 0.15rem;
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+.analysis_box .an_box2 h5{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.2rem;
+	margin-bottom: 0.1rem;
+	font-weight: normal;
+}
+.analysis_box .an_box2_con .row_fl{
+	width: 50%;
+	float: left;
+}
+.analysis_box .an_box2_con .ring_box{
+	width: 0.46rem;
+	height: 0.46rem;
+	margin-right: 0.1rem;
+}
+.analysis_box .an_box2_con .row-1{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+  	-webkit-box-pack: center;
+}
+.analysis_box .an_box2_con .row-1 span{
+	display: block;
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.2rem;
+	font-family: 'PFDin';
+}
+.analysis_box .an_box2_con .row-1 p{
+	margin: 0;
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+}
+.analysis_box .an_box3{
+	padding: 0.1rem 0.15rem;
+}
+.analysis_box .an_box3 .chart_tit{
+	margin-bottom: 0.05rem;
+}
+.analysis_box .an_box3 .chart_tit p{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	margin: 0;
+}
+.analysis_box .an_box3 .chart_tit p em{
+	display: inline-block;
+	width: 0.1rem;
+	height: 0.1rem;
+	border: 0.01rem solid #9A9690;
+	margin-right: 0.05rem;
+}
+.analysis_table{
+	background: #FFFFFF;
+}
+.analysis_table .table_tit{
+	height: 0.4rem;
+	border-bottom: 0.01rem solid #E1DFDA;
+	padding: 0 0.15rem;
+}
+.analysis_table .table_tit h3{
+	font-size: 0.16rem;
+	color: #333333;
+	line-height: 0.4rem;
+}
+.analysis_table td{
+	padding: 0.1rem 0.05rem;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 0.01rem solid #E1DFDA;
+}
+.analysis_table td h4{
+	font-size: 0.14rem;
+	color: #333333;
+	line-height: 0.2rem;
+	text-align: center;
+	font-weight: normal;
+}
+.analysis_table td p{
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.2rem;
+	margin: 0;
+}
+.analysis_table td h5{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.2rem;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'PFDin';
+}
+
+/*我的比赛*/
+.my_game_tab{
+	padding: 0.12rem 0.15rem;
+}
+.my_game_tab .row-1 a{
+	display: block;
+	font-size: 0.14rem;
+	color: #2c4669;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	background: #FFFFFF;
+	text-align: center;
+}
+.my_game_tab div.row-1:not(:last-child) a{
+    border-right: 0;
+}
+.my_game_tab div.row-1:nth-child(1) a{
+    -moz-border-radius-topleft: 0.05rem;
+    -webkit-border-top-left-radius: 0.05rem;
+    border-top-left-radius: 0.05rem;
+    -moz-border-radius-bottomleft: 0.05rem;
+    -webkit-border-bottom-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+}
+.my_game_tab div.row-1 a{
+    border: 1px solid #2c4669;
+}
+.my_game_tab div.row-1:nth-last-child(1) a{
+    -moz-border-radius-topright: 0.05rem;
+    -webkit-border-top-right-radius: 0.05rem;
+    border-top-right-radius: 0.05rem;
+    -moz-border-radius-bottomright: 0.05rem;
+    -webkit-border-bottom-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+}
+.my_game_tab .row-1 a.active{
+	background: #2c4669;
+	color: #FFFFFF;
+}
+.my_game_list li{
+	background: #FFFFFF;
+	margin-bottom: 0.1rem;
+}
+.my_game_list li .li_up{
+	padding: 0.12rem 0.15rem;
+	border-bottom: 0.01rem solid #e5e5e5;
+}
+.my_game_list li .li_up h3{
+	font-size: 0.14rem;
+    color: #333333;
+    line-height: 0.32rem;
+    padding-left: 0.4rem;
+    position: relative;
+}
+.my_game_list li .li_up h3:before {
+    content: "";
+    width: 0.32rem;
+    height: 0.32rem;
+    background: url(../images/matchImages/sign_icon.png) left center no-repeat;
+    background-size: 0.32rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.my_game_list li .li_up .fr_txt{
+	display: block;
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.32rem;
+	float: right;
+}
+.my_game_list li .li_lower{
+	padding: 0.1rem 0;
+}
+.my_game_list li .li_lower span{
+	display: block;
+	font-size: 0.12rem;
+	color: #666666;
+	line-height: 0.22rem;
+	text-align: center;
+}
+.my_game_list li .li_lower p{
+	font-size: 0.12rem;
+	color: #999999;
+	line-height: 0.24rem;
+	text-align: center;
+	margin: 0;
+}
+.my_game_list li .li_lower p.data_txt{
+	font-size: 0.18rem;
+	color: #ff5533;
+	font-family: 'PFDin';
+}
+.my_game_list li .li_btn{
+	padding: 0.05rem 0.15rem;
+	border-top: 0.01rem solid #e5e5e5;
+	overflow: hidden;
+}
+.my_game_list li .li_btn a{
+	display: block;
+	width: 0.62rem;
+	height: 0.24rem;
+	background: #f48c56;
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.24rem;
+	border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	-moz-border-radius: 0.05rem;
+	float: right;
+}
+
+/*登陆按钮的样式*/
+ .header_inner .login_btn {
+	min-width: 0.4rem;
+    height: 0.45rem;
+    display: block;
+    background: url(../images/matchImages/sy_login.png) center no-repeat;
+    background-size: 44px 44px;
+    position: absolute;
+    right: 0.45rem;
+    top: 0;
+}
+
+/*为开始导航点样式**/
+ .dot_aword  em.current{
+	display: inline-block;
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 0 0.02rem;
+}
+ .dot_aword em.active{
+	background: #FFFFFF;
+}

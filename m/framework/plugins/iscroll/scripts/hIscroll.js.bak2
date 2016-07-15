@@ -1,0 +1,259 @@
+/**************************************************************
+ @author liaohl
+ @date: 2013-10-08
+ @description 左右滑动组件，带自动滑动（分页形式）
+ @param config 配置参数
+ 	config.wrapper wrapper元素，必传
+	config.scroller scroller元素，必传
+	config.perCount 每个可视区域显示的子元素，就是每个滑块区域显示几个子元素，必传
+	config.showTab 是否有导航点，必传
+	config.tabDiv 导航点集合对象，config.showTab为true时必传
+	config.auto 是否自动播放，非必传，默认为false
+	config.onScrollEnd 滑动完毕后的自定义处理函数，非必传
+   
+\/***********************使用案例***********************\/
+1、定义
+	var HIscroll = require("hIscroll");
+	var myHIscroll = null;
+2、初始化
+	if(!myHIscroll){
+		var config = {
+			wrapper: $('wrapper对象选择器'), //wrapper对象
+			scroller: $('scroller对象选择器'), //scroller对象
+			perCount: 1,  //每个可视区域显示的子元素，就是每个滑块区域显示几个子元素
+			showTab: true, //是否有导航点
+			tabDiv: $('导航点集合对象选择器'), //导航点集合对象
+			auto: true //是否自动播放
+		};
+		myHIscroll = new HIscroll(config); //初始化
+	}
+3、销毁（看情况而定是否需要销毁）
+	myHIscroll.destroy();
+	myHIscroll = null;
+******************************************************************/
+define(function (require, exports, module) {
+	
+	function HIscroll(config)
+	{
+		var This = this;
+		var directionDev = 1;
+		var autoFlag = false;
+		var interval = null;
+		var wrapperObj = null;
+		var checkFlag = true;
+		
+		/**
+		 * 设置相关css样式
+		 */
+		this.setCssHW = function() {
+			config.scroller.css({"width":"100%","overflow":"hidden"});
+			config.scroller.children().css({"float":"left"});
+			
+			var perCount = config.perCount,
+				tabsLen = config.scroller.children().length,
+				perTabWidth = config.wrapper.parent().width() / perCount,
+				perTabHeight = config.scroller.children(":eq(0)").height();
+	
+			config.scroller.children().width(perTabWidth);
+//			config.scroller.children().height(perTabHeight);
+			config.scroller.width(perTabWidth * tabsLen);
+//			config.scroller.height(perTabHeight);
+		};
+		
+		/**
+		 * 滑动组件初始化
+		 * 在初始化滑动组件前，滑动组件的DOM结构已完备，即如果dom节点是动态添加的，则在添加完成之后再初始化
+		 */
+		this.init = function() {
+			//先设置相关css样式
+			this.setCssHW();
+			
+			//销毁对象，优化内存
+			if(wrapperObj != null) {
+				wrapperObj.destroy();
+				wrapperObj = null;
+			}
+			
+			//如果有导航点，默认第一个导航点选择，选中样式为current或者active
+			if(config.showTab) {
+				config.tabDiv.children(":eq(0)").addClass("current active").siblings().removeClass("current active");
+				
+				//给scroller每个子元素加上索引，为了后面导航点选中
+				for(var i=0,len=config.scroller.children().length; i<len; i++) {
+					var itemEle = config.scroller.children().eq(i);
+					itemEle.attr("data-idx", i);
+				}
+			}
+			
+			//初始化滑动对象
+			var iScroll = require("iscroll");
+			wrapperObj = new iScroll(config.wrapper[0], {
+				snap: true, 
+				vScroll: false, //是否垂直滚动
+				momentum: false, //是否启动滑动惯性
+				hScrollbar: false, //是否显示水平滚动条
+				vScrollbar: false, //是否显示垂直滚动条
+				onBeforeScrollStart: function(e) {
+					var nodeType = e.explicitOriginalTarget ? e.explicitOriginalTarget.nodeName.toLowerCase() : 
+						(e.target ? e.target.nodeName.toLowerCase() : '');
+					if (nodeType != 'select' && nodeType != 'option' && nodeType != 'input' 
+						&& nodeType != 'textarea') { //解决部分输入域或者下拉框没有默认行为
+						if (this.absDistX > (this.absDistY + 5)) { //解决左右滑动不能上下拉动页面
+							e.preventDefault();
+						}
+					}
+					
+					if(config.auto && config.scroller.children().length > 2) {
+						//头尾无缝循环滑动模式
+						if (wrapperObj.currPageX == wrapperObj.pagesX.length - 1 || wrapperObj.currPageX == 0) { //滑动边界值
+							autoFlag = false;
+							clearInterval(interval);
+							interval = null;
+							
+							var tempIdx = 0; //替换头尾所在的元素的索引值
+							if(wrapperObj.currPageX == wrapperObj.pagesX.length - 1){ //右滑
+								config.scroller.append(config.scroller.children().first());
+								tempIdx = --wrapperObj.currPageX;
+							} else if(wrapperObj.currPageX == 0){ //左滑
+								config.scroller.prepend(config.scroller.children().last());
+								tempIdx = ++wrapperObj.currPageX;
+							}
+							
+							//替换头尾所在的元素，这里加标志控制这个时候不改变导航点选中
+							checkFlag = false;
+							wrapperObj.scrollToPage(tempIdx, 0, 0);
+							checkFlag = true;
+						}
+					}
+				},
+		        onScrollMove: function(e) {
+		        	//解决左右滑动距离大于上下滑动时，避免上下和左右方向都滑动的效果出现，但不能完全避免
+		        	if(this.absDistX > 50 && this.absDistY > 0 && this.absDistY < this.absDistX + 20) {
+						e.preventDefault();
+						return false;
+					}
+		        },
+				onScrollEnd: function() {
+					//给滑动到的滑块对应的导航点选中（根据当前元素的当初增加的data-idx值来获取要选中导航的索引值）
+					if(config.showTab && checkFlag == true) {
+						var tabDiv = config.tabDiv;
+						var dataIdx = config.scroller.children().eq(wrapperObj.currPageX).attr("data-idx");
+						tabDiv.children().eq(dataIdx).addClass("current active").siblings().removeClass("current active");
+					}
+					
+					//再次启动自动模式，防止自动滑动的时候，手动滑动导致的定时器错乱
+					if(!autoFlag && config.auto) {
+						This.autoScroll();
+					}
+					
+					//滑动完毕之后，调用自定义处理函数
+					if(config.onScrollEnd) {
+						config.onScrollEnd();
+					}
+
+					//解决第一次无法滑动的问题，左右滑动完成之后200ms让它可以上下滑动
+					var self = this;
+					if (self.touchEndTimeId) {
+						clearTimeout(self.touchEndTimeId);
+					}
+					self.touchEndTimeId = setTimeout(function() {
+						self.absDistX = 0;
+						self.absDistY = 0;
+					}, 200);
+				}
+			});
+			
+			//启动自动播放
+			if(config.auto) {
+				This.autoScroll();
+			}
+			
+			//屏幕大小改变重新设置相关css和相关宽高，这里要实现resize全局管理器，把方法注册进去，否则后面的方法会覆盖前面的方法
+			/*
+			window.orientationchange  ? window.orientationchange = function() {This.setCssHW();} 
+				: window.onresize  = function() {This.setCssHW();};
+			*/	
+			/*
+			//鼠标移上去时停止自动播放，移开时再自动启动，没有必要的效果
+			config.scroller.children().hover(function() {
+				//关闭自动模式
+				autoFlag = false;
+	            clearInterval(interval);
+	            interval = null;
+			},function() {
+				//再次启动自动模式
+				This.autoScroll();
+			});
+			*/
+		};
+		
+		/**
+		 * 销毁引用，待释放内存
+		 */
+		this.destroy = function() {
+			if(wrapperObj != null) {
+				wrapperObj.destroy();
+				wrapperObj = null;
+			}
+			clearInterval(interval);
+			interval = null;
+			if(config.showTab) {
+				config.tabDiv.children(":eq(0)").addClass("current active").siblings().removeClass("current active");
+			}
+		};
+		
+		/**
+		 * 自动播放
+		 */
+		this.autoScroll = function() {
+            //停止自动播放，防止自动滑动的时候，手动滑动导致的定时器错乱
+			autoFlag = false;
+            clearInterval(interval);
+            interval = null;
+
+			interval = setInterval(function () {
+				if(wrapperObj != null && config.wrapper.is(":visible")) {
+					autoFlag = true;
+					//记录当前scroll滚动到第最后page时，回到最开始
+					if (wrapperObj.currPageX >= wrapperObj.pagesX.length - 1) {
+						if(config.scroller.children().length <= 2) {
+							directionDev = -1; //滑到底倒退模式
+//							directionDev = -wrapperObj.pagesX.length+1; //从头开始滑动模式
+						} else {
+							//无缝循环滑动模式
+							config.scroller.append(config.scroller.children().first());
+							//替换头尾所在的元素，这里加标志控制这个时候不改变导航点选中
+							checkFlag = false;
+							wrapperObj.scrollToPage(--wrapperObj.currPageX, 0, 0);
+							checkFlag = true;
+						}
+					} else if(wrapperObj.currPageX <= 0) {
+						directionDev = 1;
+					}
+					wrapperObj.currPageX += directionDev;
+					wrapperObj.scrollToPage(wrapperObj.currPageX, 0, 800);
+				}
+			}, 4000);
+		};
+		
+		/**
+		 * 返回滑动的当前页
+		 */
+		this.getActivePage = function() {
+			return wrapperObj.currPageX;
+		};
+		
+		/**
+		 * 滑动到指定页
+		 * @param 页数索引
+		 * @param 花费的时间 ms
+		 */
+		this.scrollToPage = function(pageNo, time) {
+			wrapperObj.scrollToPage(pageNo, 0, time);
+		};
+		
+		this.init();
+	};
+	//暴露对外的接口
+	module.exports = HIscroll;
+});

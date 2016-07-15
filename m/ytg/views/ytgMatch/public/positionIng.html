@@ -1,0 +1,187 @@
+<div class="page" id="ytgMatch_public_positionIng" data-pageTitle="组合详情" data-urlParam="true" data-refresh="yes" data-urlParam="true" data-isSaveDom="false">
+		<section class="main fixed" data-page="home">
+			<header class="header">
+				<div class="header_inner header_inner_02">
+					<h1>持仓详情</h1>
+					<a href="javascript:void(0);" class="back_btn"></a>
+					<a href="javascript:void(0);" class="menu_iocn"  style="display: none"></a>
+			        <a href="javascript:void(0);" class="menu_iocn close_iocn" style="display: none;" id="close" ></a>
+			<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0);">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">我的</a>
+					</li>
+				</ul>
+			</div>
+				</div>
+			</header>
+			<article>
+				<div class="positions_det">
+					<div class="income_top_box income_top_box2 ">
+						<div class="income_up ">
+							<div class="up_tit ">
+								<span class="fr " ><em id="guanzu_num"></em>人关注</span>
+								<span class="tag " id="finduname">国企</span>
+								
+							</div>
+							<strong id="all_yeled"><span>%</span></strong>
+							<span class="sy_total ">总收益</span>
+						</div>
+						<div class="income_lower income_lower2 ">
+							<div class="ui layout ">
+								<div class="row-1 ">
+									<p >日收益</p>
+									<span id="day_yeled"></span>
+								</div>
+								<div class="row-1 ">
+									<p>周收益</p>
+									<span id="week_yeled"></span>
+								</div>
+								<div class="row-1 ">
+									<p >月收益</p>
+									<span id="month_yeled"></span>
+								</div>
+								<div class="row-2 ">
+									<p >近30日最大回撤率 </p>
+									<span id="threeteen_yeled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="user_box clearfix ">
+						<div class="ui layout ">
+							<div class="lt_pic ">
+								<img id="small_img" src="images/my_tx.png " class="circle " />
+							</div>
+							<div class="row-1 rt_txt ">
+								<p id="name"></p>
+							</div>
+							<div class="lx_txt ">
+								<h4 id="chaogu_type">稳健型</h4>
+								<span>赛期分析</span>
+							</div>
+						</div>
+					</div>
+					<div class="contest_info">
+						<div class="fr_txt ">
+							<p>比赛排名</p>
+							<span id="ranking"></span>
+						</div>
+						<h3 id="match_name"></h3>
+					</div>
+					<div class="pos_assets_box">
+						<div class="ui layout">
+							<div class="row-1">
+								<p>初始资产（元）</p>
+								<span id="init_money"></span>
+							</div>
+							<div class="row-1">
+								<p>当前总资产（元）</p>
+								<span id="all_money"></span>
+							</div>
+							<div class="row-1">
+								<p>创建日期</p>
+								<span id="create_date"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dynamic_trading_list mt10">
+						<div class="tab">
+							<div class="ui layout">
+								<div class="row-1" id="row1">
+									<a href="javascript:void(0);" class="act">持仓</a>
+								</div>
+								<div class="row-1" id="row2">
+									<a href="javascript:void(0);">交易动态</a>
+								</div>
+								<div class="row-1" id="row3">
+									<a href="javascript:void(0);">收益走势</a>
+								</div>
+							</div>
+						</div>
+						<!-- 持仓 -->
+						<div class="tab_con"  id="postion">
+							<div class="pos_table" >
+								<table class="ui table">
+									<tr id="HoldStockList">
+										<th>名称</th>
+									  	<th>盈亏</th>
+									  	<th>持仓/仓位</th>
+									  	<th>成本/现价</th>
+									</tr>		
+								</table>
+							</div>
+						</div>
+							<!-- 动态 -->
+							<div class="tab_con"  id="dymanic"  style="display:none;">
+							<div class="tab_con_det2"   >
+								<div class="det2_con">
+									<div class="list_detail" id="TradeList">
+										<!-- <div class="list_item">
+											<h3>2015-4-24 交易记录</h3>
+											<table class="ui table" >
+												<tr id="dongtai">
+													<th>股票名称</th>
+												  	<th>成交价</th>
+												  	<th>操作</th>
+												  	<th>仓位变动</th>
+												</tr  >
+											</table>
+										</div> -->
+									</div>
+								</div>
+							   </div>
+							</div>   
+							<!--收益图-->   
+							<div class="tab_con" id="chartsRaking" style=" display:none;">
+							<div class="earnings_trend_tit">
+								<h3>收益率走势<span>（创建于2015-05-06）</span></h3>
+							</div>
+							<div class="earnings_trend_con">
+								<div class="chart_box" id="drows">
+									<!-- <img src="images/trend_chart.jpg" width="100%" /> -->
+								</div>
+								<div class="chart_annotations" style="display:none ;">
+									<span class="bs_01"><i></i>总资产走势</span>
+									<span class="bs_02"><i></i>同期上证涨跌幅走势</span>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<!-- <div class="composite_profile mt10">
+						<div class="li_tit">
+							<h3>组合简介</h3>
+						</div>
+						<div class="int_txt">
+							<p id="introdition"></p>
+						</div>
+					</div> -->
+				</div>
+			</article>
+			<footer>
+				<div class="footer_btn_con">
+					<div class="ui layout">
+						<div class="row-1" id="attention">
+							<a href="javascript:void(0);"><i class="gz_btn" ></i>关注</a>
+						</div>
+						<div class="row-1 share_btn" id="share">
+							<a href="javascript:void(0);"><i class="fx_btn"></i>分享</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+</div>

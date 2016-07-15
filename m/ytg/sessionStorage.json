@@ -1,0 +1,10 @@
+{
+	"userInfo": {
+		"description": "用户登录之后的用户数据",
+		"type": "object"
+	},
+	"userId": {
+		"description": "登录后的用户 id",
+		"type": "string"
+	}
+}

@@ -1,0 +1,115 @@
+/**
+ * ！Global variables
+ */
+
+.info-card {
+
+  background : #fff;
+
+  margin-bottom : 18px;
+  padding : 10px 15px;
+}
+.info-card .photo {
+  height : 70px;
+  width : 70px;
+  border-radius : 50%;
+  overflow : hidden;
+  margin:0 auto;
+}
+.info-card .photo img {
+  display : block;
+  width : 70px;
+  height : 70px;
+}
+.info-card .info {
+  text-align: center;
+  padding : 13px 0;
+}
+.info-card .info h2 {
+  line-height : 22px;
+  font-weight : 400;
+}
+.info-card .info p {
+  line-height : 22px;
+  color : #666;
+  font-size : 14px;
+  overflow : hidden;
+}
+.info-card .qr {
+  position : absolute;
+  right : 15px;
+  top : 10px;
+  width : 30px;
+  height : 30px;
+  margin : 20px 0;
+  font-size : 22px;
+  text-align : center;
+  line-height : 30px;
+}
+.list-group {
+  font-weight : 200;
+  margin-bottom : 12px;
+  background : #fff;
+  padding : 0 15px;
+  margin-top: 20px;
+}
+.list-group:last-child {
+  margin-bottom : 0;
+}
+.list-group .list-item {
+  position: relative;
+  line-height : 42px;
+  display : block;
+  color : #333;
+  margin:10px 0
+}
+.list-group .list-item:after {
+  position : absolute;
+  bottom : 0;
+  left : 0;
+  width : 100%;
+  height : 2px;
+  content : ' ';
+  -webkit-transform : scaleY(.5);
+          transform : scaleY(.5);
+  -webkit-transform-origin : center bottom;
+          transform-origin : center bottom;
+  border-bottom : 1px solid #ddd;
+}
+.list-group .list-item:last-child:after {
+  display : none;
+}
+.list-group .list-item i {
+  display : inline-block;
+  vertical-align : middle;
+  width:22px;
+  height:22px;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+  background-size: 110px 22px;
+}
+.list-group .list-item i.ico1{background-position: 0 0;}
+.list-group .list-item i.ico2{background-position: -22px 0;}
+.list-group .list-item i.ico3{background-position: -44px 0;}
+.list-group .list-item i.ico3{background-position: -66px 0;}
+.list-group .list-item i.r{background-position: -88px 0;}
+.list-group .list-item i.pre {
+	  margin-top: -6px;
+      margin-right : 10px;
+}
+.list-group .list-item i.suf {
+  background-position: -88px 0;
+  vertical-align: middle;
+  float:right;
+  margin-top: 10px;
+
+}
+.list-group .list-item i.ico-r {
+  color : #808080;
+ 
+}
+.list-group .list-item span {
+   font-size : 14px;    
+ 
+ 
+}

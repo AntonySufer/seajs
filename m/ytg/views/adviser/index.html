@@ -1,0 +1,72 @@
+<div class="page" id="adviser_index" data-pageTitle="投顾"  data-refresh="true">
+	<section class="main" data-page="home">
+	<header class="header">
+		<div class="header_inner tiao">
+			<a href="javascript:void(0)" class="icon_back"></a>
+			<h1 class="title text-center">理财师</h1>
+			<a href="javascript:void(0)" class="menu_iocn"></a>
+			<a href="javascript:void(0)" class="menu_iocn close_iocn" style="display: none" id="close" ></a>
+				<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">我的</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="per_page">
+			<div class="xz_search_box mt10">
+				<div class="ui layout">
+					<a href="javascript:void(0);" class="xz_search_btn" id="search_button"></a>
+					<div class="row-1 xz_search_text">
+						<input type="text" id="investName" placeholder="请输入你要搜索的投顾姓名" />
+					</div>
+				</div>
+			</div>
+			<!-- 上拉 -->
+				 <div class="visc_wrapper" style="top:1rem;" id="v_wrapper_div" data-iscrollPageId="adviser_index">
+	        		<div class="visc_scroller">
+	        			<div class="visc_pullDown" style="display:none;">
+	       					<span class="visc_pullDownIcon"></span>
+	       					<div class="visc_pullDownDiv">
+	       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+								时间更新于：<span class="visc_pullDownTime"></span>
+	       				   </div>
+	       			    </div> 
+			
+				    <div class="xz_investment_list mt10">
+				 <ul id="adviserlist">
+				<!-- 填充数据 -->
+				  </ul>
+			   </div>
+				<!-- 下拉 -->
+				       <div class="visc_pullUp" style="display:none;">
+	       					<span class="visc_pullUpIcon"></span>
+	       					<div class="visc_pullUpDiv">
+								<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+								时间更新于：<span class="visc_pullUpTime"></span>
+							</div>
+	       			   </div>
+	        		</div> 
+	        </div>
+			
+		</div>
+	</article>
+<div class="window_gray" style="display: none" id="close"></div>	<!--遮罩层 -->
+</section>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="page" id="demo_setImg" data-pageTitle="设置"  data-refresh="yes">
+<section class="main fixed" data-page="home">
+	<header class="header">
+		<div class="header_inner">
+			<a herf="javascript:void(0)" class="icon_back"></a>
+			<h1 class="title text-center">设置</h1>
+			<a href="javascript:void(0)" class="menu_iocn"></a>
+		</div>
+	</header>
+	<article>
+		<div class="my_page">
+			<div class="top_nav">
+				<div class="ui layout">
+					<div class="row-1">
+						<a href="javascript:void(0)">基本资料</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)">密码修改</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)" class="act">修改头像</a>
+					</div>
+				</div>
+			</div>
+			<div class="my_page_con">
+				<div class="change_tx_box clearfix">
+				
+					<!-- <form name="form1" method="post" action="" id="form1" enctype="multipart/form-data"> -->
+					<div class="tx_pic">
+						<img src="images/my_tx2.png"  class="circle" id="userImage"/>
+					</div>
+					<!-- </form> -->
+					<div style="display:none;">
+					 <form action="" method="post" name="form1" id="form1">
+        			 <input type="hidden" name="pictureBase64" id="pictureBase64" value=""/>
+        			 <input type="hidden" name="userID" id="userID" value=""  /><br />
+    				 </form>
+					</div>
+					
+				</div>
+				<div class="change_file_">
+					<a href="javascript:void(0)" type="file" class="change_file_btn">选择文件</a>
+				</div>
+				
+				<!-- <form name="form9" method="post" action="" id="form9" enctype="multipart/form-data">
+				<input type="file"  name="fuPhoto" id="fuPhoto" title="选择照片" />
+				</form> -->
+				
+				<div class="upload_box">
+					<div class="login_btn">
+						<a href="javascript:void(0)" class="ui button block rounded">上传</a>
+					</div>
+				</div>
+				
+				<div style="position:relative;display:none;width:0px;height:0px;">
+            	<input type="file" accept="image/*,camera" capture="camera"  id="btn1" style="width:0px;height:0px;position:absolute;top:0;left:0;"/>        
+				<input type="file" accept="image/*,camera" capture="camera"  id="btn2" style="width:0px;height:0px;position:absolute;top:0;left:0;"/> 
+                </div>
+				
+			</div>
+		</div>  
+	</article>
+</section>
+</div>

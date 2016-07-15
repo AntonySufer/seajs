@@ -1,0 +1,220 @@
+<div class="page" id="ytgMatch_simulatedStocks_myPortfolio_buyStock" data-pageTitle="买入股票"  data-refresh="yes">
+<section class="main fixed" data-page="home">
+	<header class="header">
+		<div class="header_inner tiao">
+			<a href="javascript:void(0)" class="icon_back"></a>
+			<h1 class="title text-center">模拟炒股</h1>
+			<a href="javascript:void(0);" class="menu_iocn" style="display: none"></a>
+			<a href="javascript:void(0);" class="menu_iocn close_iocn" style="display: none" id="close" ></a>
+			<div class="xl_menu" style="display: none">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">组合</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">理财师</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">问答</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">我的</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="my_page2">
+			<div class="top_nav" style="height: 0.38rem;">
+				<div class="ui layout">
+					<div class="row-1">
+						<a href="javascript:void(0)">持仓</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)" class="act">买入</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)">卖出</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)">撤单</a>
+					</div>
+					<div class="row-1">
+						<a href="javascript:void(0)">查询</a>
+					</div>
+				</div>
+			</div>
+			<div class="stock_trading">
+				<div class="stock_box_list">
+					<div class="ui layout">
+						<div class="row-1">
+							<div class="trading_text_box">
+								<div class="text_det">
+									<div class="ui field text border rounded">
+										<div class="ui dropdown">
+											<div class="ui field border rounded">
+												<input type="text" class="ui input nickname_text" value="" id="stockCode" placeholder="股票代码">
+												<span class="stock_name" id="stockName"></span>
+											</div>
+											<ul style="display: none;" id="autoSotck">
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tips_box">
+									<span class="fr">跌停<em class="agreen" id="down_limit">--</em></span>
+									<span>涨停<em class="ared" id="up_limit">--</em></span>
+								</div>
+								<div class="text_det">
+									<div class="modified">
+											<div class="ui field border rounded">
+											<input type="text" class="ui input text-center" value="" id="price" placeholder="价格(元)">
+										    </div>
+											<a href="javascript:void(0)" class="circle less_btn">-</a>
+										<a href="javascript:void(0)" class="circle add_btn">+</a>
+									</div>
+								</div>
+								<div class="tips_box">
+									<span class="text-center">可买<i id="maxBuy">--</i>(股)</span>
+								</div>
+								<div class="text_det">
+									<div class="ui field border rounded">
+										<input type="text" class="ui input nickname_text" value="" id="amount" placeholder="买入数量">
+										<span class="fr_txt">股</span>
+									</div>
+								</div>
+								<div class="buy_btn_box">
+									<div class="login_btn">
+										<a href="javascript:void(0)" style="color:#ffffff;" class="ui button block rounded">买入</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row-1">
+							<div class="trading_table">
+								<ul>
+									<li>
+										<a href="javascript:void(0)">
+											<span>卖5</span>
+											<span class="" id="mcjg5">--</span>
+											<span id="mcsl5">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>卖4</span>
+											<span class="" id="mcjg4">--</span>
+											<span id="mcsl4">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>卖3</span>
+											<span class="" id="mcjg3">--</span>
+											<span id="mcsl3">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>卖2</span>
+											<span class="" id="mcjg2">--</span>
+											<span id="mcsl2">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>卖1</span>
+											<span class="" id="mcjg1">--</span>
+											<span id="mcsl1">--</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="javascript:void(0)">
+											<span>买1</span>
+											<span class="" id="mrjg1">--</span>
+											<span id="mrsl1">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>买2</span>
+											<span class="" id="mrjg2">--</span>
+											<span id="mrsl2">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>买3</span>
+											<span class="" id="mrjg3">--</span>
+											<span id="mrsl3">--</span>
+										</a>
+									</li>
+									<li>
+										<!-- <a href="javascript:void(0)" class="act"> -->
+										<a href="javascript:void(0)">
+											<span>买4</span>
+											<span class="" id="mrjg4">--</span>
+											<span id="mrsl4">--</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>买5</span>
+											<span class="" id="mrjg5">--</span>
+											<span id="mrsl5">--</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- <div id="v_container_position" >
+		       	<div class="visc_wrapper" id="v_wrapper_position" data-iscrollPageId="userSpace_myPortfolio_buyStock"> 
+		       		<div class="visc_scroller">
+		       			<div class="visc_pullDown" style="display:none;">
+	       					<span class="visc_pullDownIcon"></span>
+	       					<div class="visc_pullDownDiv">
+	       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+								时间更新于：<span class="visc_pullDownTime"></span>
+	       					</div>
+	       				</div> -->
+				
+				<div class="lower_table" id="positionBox">
+					<table class="ui table">
+						<tr id="position">
+							<th>股票名称</th>
+						  	<th>盈亏</th>
+						  	<th>持仓/可用</th>
+						  	<th>成本/现价</th>
+						</tr>
+						
+					</table>
+				</div>
+				
+				      <!--   <div class="visc_pullUp" style="display:none;">
+	       					<span class="visc_pullUpIcon"></span>
+	       					<div class="visc_pullUpDiv">
+								<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+								时间更新于：<span class="visc_pullUpTime"></span>
+							</div>
+	       				</div>
+		       		</div>
+		       	</div>
+		       	</div> -->
+				
+			</div>
+		</div>  
+		
+	</article>
+	<div class="window_gray" style="display: none" id="close"></div>	<!--遮罩层 -->
+</section>
+</div>
